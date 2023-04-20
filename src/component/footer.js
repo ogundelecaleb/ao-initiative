@@ -45,7 +45,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <i class="fas fa-briefcase"></i>
-                  <p>info@konix.com</p>
+                  <p>ao-initiative.com</p>
                 </li>
               </ul>
             </div>
