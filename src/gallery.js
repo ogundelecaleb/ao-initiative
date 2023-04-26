@@ -12,7 +12,7 @@ const Gallery = () => {
           <div>
             {" "}
             <img
-              src="/gallery1.jpg"
+              src="/oaImage1.webp"
               alt=""
               className="col-span-1 object-contain h-[80px] w-[100px]"
             />
@@ -20,21 +20,21 @@ const Gallery = () => {
           <div>
             {" "}
             <img
-              src="/gallery2.jpg"
+              src="/oaImage2.webp"
               alt=""
               className="col-span-1 object-contain h-[80px] w-[100px]"
             />
           </div>
           <div>
             <img
-              src="/gallery3.jpg"
+              src="/oaImage3.webp"
               alt=""
               className="col-span-1 object-contain h-[80px] w-[100px]"
             />
           </div>
           <div>
             <img
-              src="/gallery5.jpg"
+              src="/oaImage4.webp"
               alt=""
               className="col-span-1 object-cover h-[80px] w-[100px]"
             />
@@ -42,7 +42,21 @@ const Gallery = () => {
 
           <div>
             <img
-              src="/gallery4.jpg"
+              src="/oaImage5.webp"
+              alt=""
+              className="col-span-1 object-cover h-[80px] w-[100px]"
+            />
+          </div>
+          <div>
+            <img
+              src="/oaImage6.webp"
+              alt=""
+              className="col-span-1 object-cover h-[80px] w-[100px]"
+            />
+          </div>
+          <div>
+            <img
+              src="/oaImage7.webp"
               alt=""
               className="col-span-1 object-cover h-[80px] w-[100px]"
             />

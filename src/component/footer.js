@@ -2,12 +2,12 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#990019] py-5 px-[30px] md:px-[80px] lg:px-[130px]">
+    <footer className="bg-[#990019] py-5 px-3 md:px-[80px] lg:px-[130px]">
       <div className="wrapper reveal">
         <div className="flex lg:flex-row flex-col w-full gap-3">
           <div className="flex-2 text-white pr-4">
             <img src="/oaLogo.png" alt="" />
-            <h4>Enriching lifes...</h4>
+            <h4 className="text-gray-200 text-sm tracking-wider">Enriching lifes...</h4>
             <p>
               OA Initiative is a non-profit organization dedicated to improving
               the lives of individuals and families affected by sickle cell
@@ -16,13 +16,13 @@ const Footer = () => {
           </div>
           <div className="flex-grow flex lg:flex-row md:flex-row flex-col gap-4  justify-between text-white w-full">
             <div class="box-item">
-              <h4>Quick Link</h4>
+              <h4 className="text-gray-400 text-sm tracking-wider">Quick Link</h4>
               <ul>
                 <li>
-                  <p>How it works</p>
+                  <p className="text-gray-400 text-sm tracking-wider">Home</p>
                 </li>
                 <li>
-                  <p>Benefits</p>
+                  <p className="text-gray-400 text-sm tracking-wider">About</p>
                 </li>
                 {/* <li>
               <a href="#review">What customers say</a>
