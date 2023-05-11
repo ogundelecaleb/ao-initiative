@@ -2,18 +2,32 @@ import React from "react";
 import Header from "./component/header";
 import { Link } from "react-router-dom";
 import Footer from "./component/footer";
+import { motion as m } from "framer-motion";
 
 const Home = () => {
   return (
     <div>
       <Header />
+
       <div className="px-[30px] md:px-[80px] lg:px-[130px] py-[75px] bg-[#990019]  ">
         {/* Hero Section */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-          <div className="lg:max-w-[500px] lg:w-[500px] w-full">
+          <m.div
+            initial={{ x: -500, opacity: 0, scale: 0.5 }}
+            animate={{
+              x: 0,
+              opacity: 1,
+              scale: 1,
+            }}
+            transition={{
+              duration: 1.5,
+            }}
+            className="lg:max-w-[500px] lg:w-[500px] w-full"
+          >
             <h2 className="text-white font-bold mb-5 text-[30px] md:text-[38px]">
               As a Sickle Cell Warrior, you can be whatever and whomever you
-              want to be. <span className="bg-red-500 px-2">Don't</span> limit yourself!
+              want to be. <span className="bg-red-500 px-2">Don't</span> limit
+              yourself!
             </h2>
 
             <p className="text-white font-normal mb-5">
@@ -25,7 +39,7 @@ const Home = () => {
             <button className="py-[14px] px-[40px] bg-white font-bold text-[#990019]">
               Find Out More
             </button>
-          </div>
+          </m.div>
 
           <div className="relative object-cover">
             <span className="h-full w-full absolute bg-[#771023] top-0 left-4 rounded-bl-[40px] object-contain"></span>
@@ -54,7 +68,7 @@ const Home = () => {
               <img
                 src="/cashinhand.png"
                 alt=""
-                className="md:h-[100px] lg:h-[120px] h-[70px] mb-2  md:mb-4"
+                className="md:h-[100px] lg:h-[120px] h-[55px] mb-2  md:mb-4"
               />
               <h2 className="md:text-[24px] text-[18px] font-bold text-gray-700 ">
                 Donate Cash
@@ -65,7 +79,7 @@ const Home = () => {
               <img
                 src="/bloodbag.png"
                 alt=""
-                className="md:h-[100px] lg:h-[120px] h-[70px] mb-2  md:mb-4"
+                className="md:h-[100px] lg:h-[120px] h-[55px] mb-2  md:mb-4"
               />
               <h2 className="md:text-[24px] text-[18px] font-bold text-gray-700 ">
                 Donate Blood
@@ -76,7 +90,7 @@ const Home = () => {
               <img
                 src="/support.png"
                 alt=""
-                className="md:h-[100px] lg:h-[120px] h-[70px] mb-2  md:mb-4"
+                className="md:h-[100px] lg:h-[120px] h-[55px] mb-2  md:mb-4"
               />
               <h2 className="md:text-[24px] text-[18px] font-bold text-gray-700 ">
                 Volunteer
@@ -85,39 +99,75 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="px-[30px] md:px-[80px] lg:px-[130px] pt-[180px] lg:pt-[100px] pb-[75px] bg-[#990019]  ">
-        <div className="flex flex-col mt-[260px] md:mt-0 gap-6 md:flex-row ">
-          <div className="md:w-[50%] w-full text-gray-100 text-[20px] ">
-            O.A INITIATIVE foundation is a non-profit organization pioneered by
-            Dr Olanipekun Ayomide, that was established in 2019 in Ekiti. The
-            charity was founded out of a desire to help people with sickle cell
-            disease live full, purposeful lives without regret or setbacks as a
-            result of health issues in Ekiti and elsewhere.
-          </div>
-          <div className="md:w-[50%] w-full  ">
-            <h4 className="font-bold text-gray-200 text-[28px] mb-9 text-center">
-              JOIN THE EKITI STATE SICKLE CELL WARRIORS COMMUNITY NOW!!
-              <span>AND ENJOY IT'S BENEFITS</span>
-            </h4>
-            <button className="animate-bounce px-3 py-2 bg-white rounded-lg text-[#990019] ">
-              <Link to="/signUp"> Join Now</Link>
+      <div className="px-[30px] md:px-[80px] lg:px-[130px] pt-[170px] lg:pt-[60px] pb-[75px] bg-[#990019]  ">
+        <div className="mt-[260px] lg:mt-[30px]">
+          <h3 className="text-[24px] text-gray-100 font-bold ">
+            What Is Sickle Cell Disease (SDC)
+          </h3>
+
+          <div className="">
+            <p className="text-gray-100 my-4 text-justify ">
+              Sickle cell disease (SCD) is the commonest inherited disorder of
+              hemoglobin in children resulting from the inheritance of abnormal
+              hemoglobin genes from both parents. It is estimated that between
+              150,000 and 300,000 children are born every year with the
+              condition in Africa. Nigeria, by her sheer huge size, is the
+              country with the highest burden of the disease where ~2% of all
+              newborns are born with the disorder. The course of the disease
+              varies widely with some children exhibiting severe manifestations
+              requiring frequent hospital visits and admissions. The condition
+              poses enormous stress and financial burden on the parents of
+              children with the disease who are usually the primary caregivers
+              in most instances.
+            </p>
+
+            <button className="bg-yellow-400 px-2 py-2 rounded-lg text-[#990019]">
+              Know More
             </button>
           </div>
         </div>
-         <div className="w-full absolute top-[10%] bg-black left-0 h-[400px] -skew-y-12 -z-20"></div>
+        <div className="w-full absolute top-[10%] bg-black left-0 h-[400px] -skew-y-12 -z-20"></div>
       </div>
       {/* Service Section */}
       <div className="px-[30px] md:px-[80px] lg:px-[130px] py-[75px] bg-white  ">
         <div className="flex flex-row justify-between items-center gap-9 bg-white">
           <div>
-            <h3 className="text-[24px] font-bold ">Health Centers Near You</h3>
-            <p className="text-[#990019] my-4 ">
-              We are a non-profit organization dedicated to improving the lives
-              of individuals and families affected by sickle cell disease.{" "}
-            </p>
-            <img src="/aboutImg1.png" alt="" />
+            <div className="flex flex-col items-center  md:mt-0 gap-6 md:flex-row ">
+              <div className="md:w-[50%] w-full text-gray-500 text-[20px] text-justify ">
+                <h3 className="text-[24px] text-gray-600 font-bold ">
+                  What Is Sickle Cell Disease (SDC)
+                </h3>
+                <p>
+                  {" "}
+                  O.A INITIATIVE foundation is a non-profit organization
+                  pioneered by Dr Olanipekun Ayomide, that was established in
+                  2019 in Ekiti. The charity was founded out of a desire to help
+                  people with sickle cell disease live full, purposeful lives
+                  without regret or setbacks as a result of health issues in
+                  Ekiti and elsewhere.
+                </p>
+                <button className="bg-yellow-400 px-2 py-2 rounded-lg text-[#990019]">
+                  <Link to="/aboutUs"> Join Now</Link>
+                </button>
+              </div>
+              <div className="md:w-[50%] w-full  ">
+                <img
+                  src="/oaImage1.webp"
+                  alt="ao-initiative members"
+                  className="object-contain"
+                />
+              </div>
+            </div>
+            <div className="md:w-[50%] w-full mt-6 ">
+              <h4 className="font-bold text-gray-500 lg:text-[28px] text-[19px]  mb-9 ">
+                JOIN THE EKITI STATE SICKLE CELL WARRIORS COMMUNITY NOW!!
+                <span className="text-gray-600">AND ENJOY IT'S BENEFITS</span>
+              </h4>
+              <button className="animate-bounce px-3 py-2 bg-yellow-400 rounded-lg text-[#990019] ">
+                <Link to="/signUp"> Join Now</Link>
+              </button>
+            </div>
           </div>
-         
         </div>
       </div>
       <Footer />
