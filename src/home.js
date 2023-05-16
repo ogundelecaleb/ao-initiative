@@ -3,8 +3,17 @@ import Header from "./component/header";
 import { Link } from "react-router-dom";
 import Footer from "./component/footer";
 import { motion as m } from "framer-motion";
+import { useForm } from "react-hook-form";
 
 const Home = () => {
+  const { register, handleSubmit } = useForm();
+
+  // const onSubmit: SubmitHandler<Inputs> = (formData) => {
+  //   window.location.href = `mailto:ogundelecaleb14@gmail?subject=${formData.subject}&body=Hi, My Name is ${formData.name}. ${formData.message} (${formData.email})`}
+
+  const onSubmit = (formData) => {
+    window.location.href = `mailto:ogundelecaleb14@gmail?subject=${formData.subject}&body=Hi, My Name is ${formData.name}. ${formData.message} (${formData.email})`;
+  };
   return (
     <div>
       <Header />
@@ -100,7 +109,7 @@ const Home = () => {
         </div>
       </div>
       <div className="px-[30px] md:px-[80px] lg:px-[130px] pt-[170px] lg:pt-[60px] pb-[75px] bg-[#990019]  ">
-        <div className="mt-[260px] lg:mt-[30px]">
+        <div className="mt-[260px] md:mt-[30px]">
           <h3 className="text-[24px] text-gray-100 font-bold ">
             What Is Sickle Cell Disease (SDC)
           </h3>
@@ -135,7 +144,7 @@ const Home = () => {
             <div className="flex flex-col items-center  md:mt-0 gap-6 md:flex-row ">
               <div className="md:w-[50%] w-full text-gray-500 text-[20px] text-justify ">
                 <h3 className="text-[24px] text-gray-600 font-bold ">
-                  What Is Sickle Cell Disease (SDC)
+                  About AO.INITIATIVE
                 </h3>
                 <p>
                   {" "}
@@ -158,7 +167,8 @@ const Home = () => {
                 />
               </div>
             </div>
-            <div className="md:w-[50%] w-full mt-6 ">
+          <div className=" w-full mt-[28px] md:mt-[48px] flex flex-col md:flex-row-reverse items-center ">
+            <div className="md:w-[50%] w-full  ">
               <h4 className="font-bold text-gray-500 lg:text-[28px] text-[19px]  mb-9 ">
                 JOIN THE EKITI STATE SICKLE CELL WARRIORS COMMUNITY NOW!!
                 <span className="text-gray-600">AND ENJOY IT'S BENEFITS</span>
@@ -167,9 +177,64 @@ const Home = () => {
                 <Link to="/signUp"> Join Now</Link>
               </button>
             </div>
+            <div className="md:w-[50%] w-full  ">
+              <img
+                src="/oaImage3.webp"
+                alt="ao-initiative members"
+                className="object-contain"
+              />
+            </div>
+          </div>
           </div>
         </div>
       </div>
+       <section
+            id="contact"
+            className="bg-[#c91735] py-9 px-[30px] md:px-[80px] lg:px-[130px] "
+          >
+            <div>
+              <h2 className="text-[28px] text-gray-100 font-bold mb-4 text-center">
+               Send A Mail
+              </h2>
+              <form
+                onSubmit={handleSubmit(onSubmit)}
+                action=""
+                className="flex flex-col space-y-2  "
+              >
+                <div className="flex gap-2   flex-col md:flex-row md:space-x-2 md:justify-between">
+                  <input
+                    {...register("name")}
+                    placeholder="Name"
+                    type="text"
+                    className="contactInput w-full"
+                  />
+                  <input
+                    {...register("email")}
+                    placeholder="Email"
+                    type="email"
+                    className="contactInput w-full"
+                  />
+                </div>
+                <input
+                  {...register("subject")}
+                  placeholder="Subject"
+                  type="text"
+                  className="contactInput"
+                />
+                <textarea
+                  {...register("message")}
+                  placeholder="Message"
+                  className="contactInput"
+                ></textarea>
+                <button
+                  type="submit"
+                  className="bg-yellow-400 lg:w-[90px] self-center py-5 px-10 md:px-4 rounded-md text-[#990019] font-bold text-lg"
+                >
+                  Submit
+                </button>
+              </form>
+            </div>
+          </section>
       <Footer />
     </div>
   );

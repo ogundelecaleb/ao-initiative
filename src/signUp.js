@@ -1,14 +1,17 @@
+/* eslint-disable jsx-a11y/iframe-has-title */
 import React from "react";
 import { Link } from "react-router-dom";
 import Footer from "./component/footer";
 import Header from "./component/header";
+import {GoLocation, GoMail} from "react-icons/go";
+import {BsTelephone} from "react-icons/bs";
 
 const SignUp = () => {
   return (
     <>
       <Header />
       <div className="px-[30px] md:px-[80px] lg:px-[130px] py-[75px] bg-[#990019] text-white  ">
-        <h3 className="mb-5 text-xl font-bold">
+        {/* <h3 className="mb-5 text-xl font-bold">
           {" "}
           Sign up to stay informed and connected through email with information
           about sickle cell. And this is just the beginning—expect to see more
@@ -21,9 +24,9 @@ const SignUp = () => {
         <p className="mb-5">
           We collect this information to help tailor the content that is
           delivered to you and improve our programs.
-        </p>
+        </p> */}
 
-        <form action="">
+        {/* <form action="">
           <div className="flex flex-col gap-4 bg-hero-pattern p-4 lg:w-[400px] w-[300px] rounded-md">
             <div class="mb-[0.125rem] mr-4 inline-block min-h-[1.5rem] pl-[1.5rem]">
               <input
@@ -125,7 +128,7 @@ const SignUp = () => {
               >
                 <Link to="/">
                   Submit{" "}
-                  {/* {loading && (
+                  {loading && (
                           <svg
                             className="ml-4 w-6 h-6 text-[white] animate-spin"
                             xmlns="http://www.w3.org/2000/svg"
@@ -146,12 +149,12 @@ const SignUp = () => {
                               d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
                             ></path>
                           </svg>
-                        )} */}{" "}
+                        )}{" "}
                 </Link>
               </button>
             </div>
           </div>
-        </form>
+        </form> */}
         <div className="mx-auto flex justify-center ">
         <iframe
           src="https://docs.google.com/forms/d/e/1FAIpQLSeQvTUYimcx57mboyZoXakdWFNoHw8mHbaumOoDXQk1GQDuPw/viewform?embedded=true"
@@ -160,13 +163,82 @@ const SignUp = () => {
           frameborder="0"
           marginheight="0"
           marginwidth="0"
-          className="lg:w-[640px] w-full "
+          className=" w-full "
         >
           Loading…
         </iframe>
         </div>
       </div>
-      <Footer />
+      <footer className="bg-gray-100  py-8 px-3 md:px-[80px] lg:px-[130px]">
+      <div className="wrapper reveal">
+        <div className="flex lg:flex-row flex-col w-full gap-3">
+          <div className="flex-2 text-white pr-4">
+            <img src="/oaLogo.png" alt="" />
+            <h4 className="text-gray-600 py-2 tracking-wider ">Enriching lifes...</h4>
+            <p className="text-gray-600 ">
+              OA Initiative is a non-profit organization dedicated to improving
+              the lives of individuals and families affected by sickle cell
+              disease.
+            </p>
+          </div>
+          <div className="flex-grow flex lg:flex-row md:flex-row flex-col gap-4  justify-between text-white w-full">
+            <div class="box-item">
+              <h4 className="text-gray-600  tracking-wider font-bold text-md">Quick Link</h4>
+              <ul>
+                <li>
+                  <p className="text-gray-600 py-2 tracking-wider">Home</p>
+                </li>
+                <li>
+                  <p className="text-gray-600 py-2 tracking-wider">About Us</p>
+                </li>
+                <li>
+                  <p className="text-gray-600 py-2 tracking-wider">Gallery</p>
+                </li>
+                <li>
+                  <p className="text-gray-600 py-2 tracking-wider">Sign Up</p>
+                </li>
+                {/* <li>
+              <a href="#review">What customers say</a>
+            </li> */}
+                <li>
+                  <p className="text-gray-600 py-2 tracking-wider">FAQ</p>
+                </li>
+              </ul>
+            </div>
+            <div className="box-item">
+              <h4 className="text-gray-600 text-md tracking-wider font-bold">Contact</h4>
+              <ul className="contact text-gray-600">
+              <li className="py-2 flex gap-1 items-center">
+                  <BsTelephone/>
+                  <p>+234 8083 8100 30</p>
+                </li>
+                <li className="py-2 flex gap-1 items-center">
+                  
+                  <GoLocation/> <p>51c, Remi Fani Kayode Avenue, GRA Ikeja, Lagos.</p>
+                 
+                </li>
+                <li className="py-2 flex gap-1 items-center">
+                  <GoMail/>
+                  <p>sales@paylodeservices.com</p>
+                </li>
+              </ul>
+            </div>
+            <div className="box-item text-gray-600">
+              <h4 className="text-md font-bold">Legal</h4>
+              <ul>
+                <li>
+                  <p className="py-2">Terms of Use</p>
+                </li>
+                <li>
+                  <p className="py-2">Privacy Policy</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <p className="text-gray-600  mt-8 mb-2 text-center">© OA.Initiative 2023. All rights reserved.</p>
+      </div>
+    </footer>
     </>
   );
 };

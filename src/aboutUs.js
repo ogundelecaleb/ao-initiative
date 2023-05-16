@@ -158,8 +158,8 @@ const AboutUs = () => {
           <table>
             <tr className="my-2">
               <th className="text-gray-800 font-bold ">Lack of Database</th>
-              <td className="py-6 pl-3 text-gray-600">
-                <p className="px-10 ">
+              <td className="py-6 md:pl-3 text-gray-600">
+                <p className="md:px-10 ">
                   {" "}
                   There is no proper database of warriors in Ekiti State.
                 </p>
@@ -169,9 +169,9 @@ const AboutUs = () => {
               <th className="text-gray-800 font-bold mr-2 ">
                 Lack of Public Awareness
               </th>
-              <td className="py-6 pl-3 text-gray-600">
-                <p className="px-10 ">
-                  There is lack of public awareness understan ding of sickle
+              <td className="py-6 md:pl-3 text-gray-600">
+                <p className="md:px-10 ">
+                  There is lack of public awareness understanding of sickle
                   cell disease, leading to stigmatization and discrimination for
                   those affected by the condition.
                 </p>
@@ -181,8 +181,8 @@ const AboutUs = () => {
               <th className="text-gray-800 font-bold mr-2">
                 Lack of access to good Health Services
               </th>
-              <td className="py-6 pl-3 text-gray-600">
-                <p className="px-10 ">
+              <td className="py-6 md:pl-3 text-gray-600">
+                <p className="md:px-10 ">
                   Many lack access to specialized medical treatment and are
                   forced to rely on emergency care for pain management.
                 </p>
@@ -201,8 +201,8 @@ const AboutUs = () => {
           <table className=" ">
             <tr>
               <th className="text-gray-800 font-bold mr-2 ">Database</th>
-              <td className="py-6  pl-3 text-gray-600">
-                <p className="px-10 ">
+              <td className="py-6  md:pl-3 text-gray-600">
+                <p className="md:px-10 ">
                   To have comprehensive data and information on people living
                   with the disorder in Ekiti State.
                 </p>
@@ -212,8 +212,8 @@ const AboutUs = () => {
               <th className="text-gray-800 font-bold mr-2 ">
                 Public Awareness
               </th>
-              <td className="py-6  pl-3 text-gray-600">
-                <p className="px-10 ">
+              <td className="py-6  md:pl-3 text-gray-600">
+                <p className="md:px-10 ">
                   To educate people on genotype compatibility in Ekiti State To
                   raise public knowledge of sickle cell illness and to sensitize
                   and educate the public through standard professional
@@ -225,8 +225,8 @@ const AboutUs = () => {
               <th className="text-gray-800 font-bold mr-2">
                 Specialised Centers
               </th>
-              <td className="py-6  pl-3 text-gray-600">
-                <p className="px-10 ">
+              <td className="py-6  md:pl-3 text-gray-600">
+                <p className="md:px-10 ">
                   To offer clinical services to sickle cell patients who are in
                   pain
                 </p>
@@ -316,10 +316,10 @@ const AboutUs = () => {
                 <tr className="border-b border-gray-500">
                   <th className="text-gray-800 font-bold mr-2 ">
                     {" "}
-                    <p className="px-10 ">Community</p>
+                    <p className="md:px-10 ">Community</p>
                   </th>
-                  <td className=" pl-3 text-gray-600 py-6">
-                    <p className="px-10 ">
+                  <td className=" md:pl-3 text-gray-600 py-6">
+                    <p className="md:px-10 ">
                       Religious Centers, Hospital, Schools, Offices, Hangouts,
                       Support groups.
                     </p>
@@ -328,12 +328,12 @@ const AboutUs = () => {
               </tr>
               <tr className="">
                 <th className="text-gray-800 font-bold  ">
-                  <p className="px-10 "> Medical professionals</p>
+                  <p className="md:px-10 "> Medical professionals</p>
                 </th>
                 <tr>
                   <th className="text-gray-800 font-bold mr-2 ">Concerns</th>
-                  <td className="pl-3 text-gray-600 py-6">
-                    <p className="px-10 ">
+                  <td className="md:pl-3 text-gray-600 py-6">
+                    <p className="md:px-10 ">
                       {" "}
                       Lack of knowledge or training, Managing acute
                       complications, Pain management, Limited resources,
@@ -344,10 +344,10 @@ const AboutUs = () => {
                 <tr className="border-b border-gray-500">
                   <th className="text-gray-800 font-bold mr-2 ">
                     {" "}
-                    <p className="px-10 ">Community</p>
+                    <p className="md:px-10 ">Community</p>
                   </th>
-                  <td className=" pl-3 text-gray-600 py-6">
-                    <p className="px-10 ">
+                  <td className=" md:pl-3 text-gray-600 py-6">
+                    <p className="md:px-10 ">
                       {" "}
                       Hospitals and Clinics, Community health centers, Private
                       practice, Universities and research institutions
