@@ -135,7 +135,7 @@ const AboutUs = () => {
             <div className="bg-yellow-400 h-20 shadow pt-[60px] pb-[50px] px-3 relative rounded-t-[16px]">
               <div className="p-1  border border-yellow-500 rounded-full absolute mx-auto -top-[50%] right-[25%]">
                 <img
-                  src="/admin5.jpg"
+                  src="/admin2.jpg"
                   alt=""
                   className="h-[95px] w-[95px] rounded-full object-cover"
                 />
@@ -242,7 +242,7 @@ const AboutUs = () => {
           <div className="h-1 w-7 mb-1 bg-slate-500"></div>
           <div className="h-1 w-10 bg-slate-500 mb-5"></div>
 
-          <div className="grid grid-cols-2 md:grid-col-3 items-centers lg:gap-3 justify-center">
+          <div className="grid grid-cols-1 md:grid-col-3 items-centers gap-3 justify-center">
             <div className="flex flex-row items-center gap-3 ">
               <h2 className="text-[34px] lg:text-[42px] font-extrabold text-[#990019]">
                 10%
@@ -261,7 +261,7 @@ const AboutUs = () => {
                 <h2 className="text-[34px] lg:text-[42px] font-extrabold text-[#990019]">
                   25%
                 </h2>
-                <p className="px-3 text-[16px] lg:text-[24px] ">
+                <p className=" text-[16px] lg:text-[24px] ">
                   of adult throughout the country have the sickle cell trait
                 </p>
               </div>
@@ -296,16 +296,16 @@ const AboutUs = () => {
           <div className=" py-7">
             <table>
               <tr className="">
-                <th className="text-gray-800 font-bold mr-2 ">
+                <th className="text-gray-800 font-bold md:mr-2 ">
                   <p>Individuals and families</p>
                 </th>
                 <tr className="border-t border-gray-500 py-3">
-                  <th className="text-gray-800 font-bold mr-2 ">
+                  <th className="text-gray-800 font-bold ">
                     {" "}
-                    <p className="px-10 ">Concerns</p>{" "}
+                    <p className="md:px-10 ">Concerns</p>{" "}
                   </th>
                   <td className="py-6  pl-3 text-gray-600">
-                    <p className="px-10 ">
+                    <p className="md:px-10 ">
                       {" "}
                       Pain management, Access to healthcare, Education and
                       resources, Financial burden, Stigma and discrimination,
@@ -314,7 +314,7 @@ const AboutUs = () => {
                   </td>
                 </tr>
                 <tr className="border-b border-gray-500">
-                  <th className="text-gray-800 font-bold mr-2 ">
+                  <th className="text-gray-800 font-bold ">
                     {" "}
                     <p className="md:px-10 ">Community</p>
                   </th>

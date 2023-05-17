@@ -18,7 +18,7 @@ const Footer = () => {
           </div>
           <div className="flex-grow flex lg:flex-row md:flex-row flex-col gap-4  justify-between text-white w-full">
             <div class="box-item">
-              <h4 className="text-gray-100  tracking-wider font-bold text-md">Quick Link</h4>
+              <h4 className="text-gray-200  tracking-wider font-bold text-md">Quick Link</h4>
               <ul>
                 <li>
                   <p className="text-gray-100 py-2 tracking-wider">Home</p>
@@ -30,7 +30,7 @@ const Footer = () => {
                   <p className="text-gray-100 py-2 tracking-wider">Gallery</p>
                 </li>
                 <li>
-                  <p className="text-gray-100 py-2 tracking-wider">Sign Up</p>
+                  <p className="text-gray-100 py-2 tracking-wider"> Enroll</p>
                 </li>
                 {/* <li>
               <a href="#review">What customers say</a>
@@ -41,7 +41,7 @@ const Footer = () => {
               </ul>
             </div>
             <div className="box-item">
-              <h4 className="text-gray-100 text-md tracking-wider font-bold">Contact</h4>
+              <h4 className="text-gray-200 text-md tracking-wider font-bold">Contact</h4>
               <ul className="contact text-gray-100">
               <li className="py-2 flex gap-1 items-center">
                   <BsTelephone/>
@@ -58,9 +58,9 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div className="box-item text-gray-100">
-              <h4 className="text-md font-bold">Legal</h4>
-              <ul>
+            <div className="box-item ">
+              <h4 className="text-md text-gray-200 font-bold">Legal</h4>
+              <ul className="text-gray-100">
                 <li>
                   <p className="py-2">Terms of Use</p>
                 </li>
@@ -71,7 +71,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <p className="text-gray-100  mt-8 mb-2 text-center">© OA.Initiative 2023. All rights reserved.</p>
+        <p className="text-gray-100  mt-8 pb-4 text-center ">© OA.Initiative 2023. All rights reserved.</p>
       </div>
     </footer>
   );

@@ -17,29 +17,29 @@ const Header = () => {
 
         <nav className="hidden lg:inline-block">
           <ul className="flex flex-row items-center justify-between gap-[30px] ">
-            <li className="cursor-pointer hover:text-[##990019] hover:border-b-[#990019]">
+            <li className="cursor-pointer font-bold hover:text-[##990019] hover:border-b-[#990019]">
               <Link to="/">Home</Link>{" "}
             </li>
-            <li className="cursor-pointer hover:text-[##990019] hover:border-b-[#990019]">
+            <li className="cursor-pointer font-bold hover:text-[##990019] hover:border-b-[#990019]">
               <Link to="/aboutUs">About Us</Link>{" "}
             </li>
-            <li className="cursor-pointer hover:text-[##990019] hover:border-b-[#990019]">
+            <li className="cursor-pointer font-bold hover:text-[##990019] hover:border-b-[#990019]">
               <Link to="/gallery">Gallery</Link>{" "}
             </li>
-            <li className="cursor-pointer hover:text-[##990019] hover:border-b-[#990019]">
+            <li className="cursor-pointer font-bold hover:text-[##990019] hover:border-b-[#990019]">
               Event
             </li>
           </ul>
         </nav>
         <button className="animate-pulse py-[14px] px-[40px] bg-[#990019] text-white font-bold rounded-md hidden lg:inline-block">
-          <Link to="/signUp">Sign Up</Link>
+          <Link to="/signUp">Enroll Now</Link>
         </button>
         <button onClick={handleToggle} className="lg:hidden md:inline-block">
           {toggle ? <GiHamburgerMenu /> : <AiOutlineClose />}
         </button>
 
         {showMenu && (
-          <div className="bg-white absolute right-1 -bottom-[340%] lg:hidden w-[200px] py-5 px-3 z-1000">
+          <div className="bg-white absolute right-1 -bottom-[340%] lg:hidden w-[200px] py-5 px-3 z-10">
             <ul className="flex flex-col gap-[10px] mb-2 ">
               <Link to="/">
                 {" "}
@@ -64,7 +64,7 @@ const Header = () => {
               </li>
             </ul>
             <button className="animate-pulse py-[8px] px-[24px] bg-[#990019] text-white font-bold rounded-md">
-              <Link to="/signUp">Sign Up</Link>
+              <Link to="/signUp">Enroll Now</Link>
             </button>
           </div>
         )}

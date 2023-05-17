@@ -1,7 +1,5 @@
 /* eslint-disable jsx-a11y/iframe-has-title */
 import React from "react";
-import { Link } from "react-router-dom";
-import Footer from "./component/footer";
 import Header from "./component/header";
 import {GoLocation, GoMail} from "react-icons/go";
 import {BsTelephone} from "react-icons/bs";
@@ -183,8 +181,8 @@ const SignUp = () => {
           </div>
           <div className="flex-grow flex lg:flex-row md:flex-row flex-col gap-4  justify-between text-white w-full">
             <div class="box-item">
-              <h4 className="text-gray-600  tracking-wider font-bold text-md">Quick Link</h4>
-              <ul>
+              <h4 className="text-gray-800  tracking-wider font-bold text-md">Quick Link</h4>
+              <ul className="text-[9px]">
                 <li>
                   <p className="text-gray-600 py-2 tracking-wider">Home</p>
                 </li>
@@ -195,19 +193,16 @@ const SignUp = () => {
                   <p className="text-gray-600 py-2 tracking-wider">Gallery</p>
                 </li>
                 <li>
-                  <p className="text-gray-600 py-2 tracking-wider">Sign Up</p>
+                  <p className="text-gray-600 py-2 tracking-wider">Enroll</p>
                 </li>
-                {/* <li>
-              <a href="#review">What customers say</a>
-            </li> */}
                 <li>
                   <p className="text-gray-600 py-2 tracking-wider">FAQ</p>
                 </li>
               </ul>
             </div>
             <div className="box-item">
-              <h4 className="text-gray-600 text-md tracking-wider font-bold">Contact</h4>
-              <ul className="contact text-gray-600">
+              <h4 className="text-gray-800 text-md tracking-wider font-bold">Contact</h4>
+              <ul className="contact text-[9px] text-gray-600">
               <li className="py-2 flex gap-1 items-center">
                   <BsTelephone/>
                   <p>+234 8083 8100 30</p>
@@ -223,9 +218,9 @@ const SignUp = () => {
                 </li>
               </ul>
             </div>
-            <div className="box-item text-gray-600">
-              <h4 className="text-md font-bold">Legal</h4>
-              <ul>
+            <div className="box-item ">
+              <h4 className="text-md text-gray-800 font-bold">Legal</h4>
+              <ul className="text-[9px] text-gray-600">
                 <li>
                   <p className="py-2">Terms of Use</p>
                 </li>
