@@ -1,7 +1,7 @@
 import React from "react";
 import Footer from "./component/footer";
 import Header from "./component/header";
-import { motion as m } from "framer-motion";
+
 
 const AboutUs = () => {
   return (
