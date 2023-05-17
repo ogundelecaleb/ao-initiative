@@ -1,7 +1,7 @@
 import React from "react";
 import Footer from "./component/footer";
 import Header from "./component/header";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 import { Carousel } from "react-responsive-carousel";
 
 const Gallery = () => {

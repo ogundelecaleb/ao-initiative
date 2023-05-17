@@ -160,7 +160,7 @@ const AboutUs = () => {
               <th className="text-gray-800 font-bold ">Lack of Database</th>
               <td className="py-6 md:pl-3 text-gray-600">
                 <p className="md:px-10 ">
-                  {" "}
+                  
                   There is no proper database of warriors in Ekiti State.
                 </p>
               </td>
