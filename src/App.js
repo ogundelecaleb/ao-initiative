@@ -5,6 +5,7 @@ import "./App.css";
 import Gallery from "./gallery";
 import Home from "./home";
 import SignUp from "./signUp";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 
 function App() {
   return (
