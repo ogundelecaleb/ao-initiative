@@ -32,12 +32,7 @@ const Footer = () => {
                 <li>
                   <p className="text-gray-100 py-2 tracking-wider"> Enroll</p>
                 </li>
-                {/* <li>
-              <a href="#review">What customers say</a>
-            </li> */}
-                <li>
-                  <p className="text-gray-100 py-2 tracking-wider">FAQ</p>
-                </li>
+             
               </ul>
             </div>
             <div className="box-item">
@@ -45,16 +40,16 @@ const Footer = () => {
               <ul className="contact text-gray-100">
               <li className="py-2 flex gap-1 items-center">
                   <BsTelephone/>
-                  <p>+234 8083 8100 30</p>
+                  <p>+234 8148942186</p>
                 </li>
                 <li className="py-2 flex gap-1 items-center">
                   
-                  <GoLocation/> <p>51c, Remi Fani Kayode Avenue, GRA Ikeja, Lagos.</p>
+                  <GoLocation/> <p>20, Oore Ofe quarters, Ekiti State. </p>
                  
                 </li>
                 <li className="py-2 flex gap-1 items-center">
                   <GoMail/>
-                  <p>sales@paylodeservices.com</p>
+                  <p>olanipekunayomideinitiative@gmail.com</p>
                 </li>
               </ul>
             </div>

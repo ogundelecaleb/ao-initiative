@@ -94,7 +94,8 @@ const Home = () => {
                 Donate Blood
               </h2>
             </div>
-            <div className="flex flex-col rounded-lg items-center text-center  bg-gray-100 border shadow p-2 md:p-5">
+            <Link to="https://docs.google.com/forms/d/e/1FAIpQLSf0Cp-gNc_hCrCULZS_Du9s59Zt9pH1c9XjDEfC8NAzmYQZrA/viewform">
+            <div className="flex flex-col animate-bounce transform ease-in duration-300 hover:scale-125 cursor-pointer rounded-lg items-center text-center  bg-gray-100 border shadow p-2 md:p-5">
               {" "}
               <img
                 src="/support.png"
@@ -105,6 +106,8 @@ const Home = () => {
                 Volunteer
               </h2>
             </div>
+            </Link>
+            
           </div>
         </div>
       </div>
@@ -186,7 +189,7 @@ const Home = () => {
                 />
               </div>
             </div>
-            <div className=" w-full mt-[28px] md:mt-[48px] flex flex-col md:flex-row-reverse gap-[40px] md:gap-[80px] items-center ">
+            <div className=" w-full mt-[28px] md:mt-[120px] flex flex-col md:flex-row-reverse gap-[40px] md:gap-[80px] items-center ">
               <div className="md:w-[50%] w-full  ">
                 <h3 className="text-[24px] text-gray-600 font-bold mb-4 ">
                   Ekiti State Sickle Cell Warriors Enrollment 
@@ -217,7 +220,7 @@ const Home = () => {
       </div>
       <section
         id="contact"
-        className="bg-gray-200 py-9 px-[30px] md:px-[80px] lg:px-[130px] "
+        className="bg-gray-200 py-[48px] px-[30px] md:px-[80px] lg:px-[130px] "
       >
         <div>
           <h2 className="text-[28px] text-gray-600 font-bold mb-4 text-center">
@@ -226,7 +229,7 @@ const Home = () => {
           <form
             onSubmit={handleSubmit(onSubmit)}
             action=""
-            className="flex flex-col space-y-2  "
+            className="flex flex-col space-y-4 md:px-[10%]  "
           >
             <div className="flex gap-2   flex-col md:flex-row md:space-x-2 md:justify-between">
               <input
@@ -255,7 +258,7 @@ const Home = () => {
             ></textarea>
             <button
               type="submit"
-              className="bg-yellow-400 lg:w-[90px] self-center py-5 px-[16px] md:px-4 rounded-md text-[#990019] font-bold text-lg"
+              className="bg-yellow-400 md:w-[70%] w-full   self-center py-5 px-[16px] md:px-4 rounded-md text-[#990019] font-bold text-lg"
             >
               Submit
             </button>
