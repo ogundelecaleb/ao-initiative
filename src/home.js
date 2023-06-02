@@ -46,7 +46,7 @@ const Home = () => {
             </p>
 
             <button className="bg-yellow-400 px-4 py-3 rounded-lg text-[#990019]">
-            <Link to="/aboutUs"> Find Out More</Link>
+              <Link to="/aboutUs"> Find Out More</Link>
             </button>
           </m.div>
 
@@ -95,19 +95,18 @@ const Home = () => {
               </h2>
             </div>
             <Link to="https://docs.google.com/forms/d/e/1FAIpQLSf0Cp-gNc_hCrCULZS_Du9s59Zt9pH1c9XjDEfC8NAzmYQZrA/viewform">
-            <div className="flex flex-col animate-bounce transform ease-in duration-300 hover:scale-125 cursor-pointer rounded-lg items-center text-center  bg-gray-100 border shadow p-2 md:p-5">
-              {" "}
-              <img
-                src="/support.png"
-                alt=""
-                className="md:h-[100px] lg:h-[120px] h-[55px] mb-2  md:mb-4"
-              />
-              <h2 className="md:text-[24px] text-[18px] font-bold text-gray-700 ">
-                Volunteer
-              </h2>
-            </div>
+              <div className="flex flex-col animate-bounce transform ease-in duration-50  hover:scale-125 cursor-pointer rounded-lg items-center text-center  bg-gray-100 border shadow p-2 md:p-5">
+                {" "}
+                <img
+                  src="/support.png"
+                  alt=""
+                  className="md:h-[100px] lg:h-[120px] h-[55px] mb-2  md:mb-4"
+                />
+                <h2 className="md:text-[24px] text-[18px] font-bold text-gray-700 ">
+                  Volunteer
+                </h2>
+              </div>
             </Link>
-            
           </div>
         </div>
       </div>
@@ -116,7 +115,7 @@ const Home = () => {
           <div className="flex flex-col gap-[40px] md:flex-row md:gap-[80px]">
             <div className="md:w-[50%] w-full ">
               <h3 className="text-[24px] text-gray-100 font-bold ">
-                What Is Sickle Cell Disease (SDC)
+                What Is Sickle Cell Disease (SCD)
               </h3>
 
               <p className="text-gray-100 my-4 text-justify ">
@@ -133,10 +132,11 @@ const Home = () => {
                 burden on the parents of children with the disease who are
                 usually the primary caregivers in most instances.
               </p>
-
-              <button className="bg-yellow-400 px-2 py-2 rounded-lg text-[#990019]">
-                Know More
-              </button>
+              <Link to="https://en.wikipedia.org/wiki/Sickle_cell_disease">
+                <button className="bg-yellow-400 px-2 py-2 rounded-lg text-[#990019]">
+                  Know More
+                </button>
+              </Link>
             </div>
             <div className="md:w-[50%] w-full">
               <h2 className="text-[24px] text-gray-100 font-bold ">
@@ -178,7 +178,9 @@ const Home = () => {
                   Ekiti and elsewhere.
                 </p>
                 <button className="bg-yellow-400 px-2 py-2 rounded-lg text-[#990019] mt-4">
-                  <Link to="/aboutUs"> Join Now</Link>
+                  <Link to="https://docs.google.com/forms/d/e/1FAIpQLSf0Cp-gNc_hCrCULZS_Du9s59Zt9pH1c9XjDEfC8NAzmYQZrA/viewform">
+                    Join Now
+                  </Link>
                 </button>
               </div>
               <div className="md:w-[50%] w-full  ">
@@ -192,7 +194,7 @@ const Home = () => {
             <div className=" w-full mt-[28px] md:mt-[120px] flex flex-col md:flex-row-reverse gap-[40px] md:gap-[80px] items-center ">
               <div className="md:w-[50%] w-full  ">
                 <h3 className="text-[24px] text-gray-600 font-bold mb-4 ">
-                  Ekiti State Sickle Cell Warriors Enrollment 
+                  Ekiti State Sickle Cell Warriors Enrollment
                 </h3>
                 <p className=" text-gray-500 lg:text-[18px] text-[16px]  mb-9 ">
                   Enroll into the Ekiti State Health Insurance Sickle Scheme to

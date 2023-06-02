@@ -26,9 +26,6 @@ const Header = () => {
             <li className="cursor-pointer font-bold hover:text-[##990019] hover:border-b-[#990019]">
               <Link to="/gallery">Gallery</Link>{" "}
             </li>
-            <li className="cursor-pointer font-bold hover:text-[##990019] hover:border-b-[#990019]">
-              Event
-            </li>
           </ul>
         </nav>
         <button className="animate-pulse py-[14px] px-[40px] bg-[#990019] text-white font-bold rounded-md hidden lg:inline-block">
@@ -58,10 +55,7 @@ const Header = () => {
                 <li className="cursor-pointer border-b hover:text-[##990019] hover:border-b-[#990019]">
                   Gallery{" "}
                 </li>
-              </Link> 
-              <li className="cursor-pointer border-b hover:text-[##990019] hover:border-b-[#990019]">
-                Event
-              </li>
+              </Link>
             </ul>
             <button className="animate-pulse py-[8px] px-[24px] bg-[#990019] text-white font-bold rounded-md">
               <Link to="/signUp">Enroll Now</Link>
