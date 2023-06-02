@@ -2,20 +2,19 @@ import React from "react";
 import Footer from "./component/footer";
 import Header from "./component/header";
 
-
 const AboutUs = () => {
   return (
     <div>
       <Header />
       <div className="bg-[#fafafa]">
         <div className="px-3 md:px-[80px] lg:px-[130px] py-3 lg:py-6 ">
-          <h2 className=" pb-1 text-[20px] font-bold text-[#990019]">
+          <h2 className=" pb-1 text-[24px] font-bold text-[#990019]">
             About OA Initiative <br />
           </h2>
           <div className="h-1 w-7 mb-1 bg-slate-500"></div>
           <div className="h-1 w-10 bg-slate-500 mb-5"></div>
 
-          <p className="text-gray-600 tracking-wide text-justify">
+          <p className="text-gray-600 md:text-[18px] tracking-wide text-justify">
             O.A INITIATIVE foundation is a non-profit organization pioneered by
             Dr Olanipekun Ayomide, that was established in 2019 in Ekiti. The
             charity was founded out of a desire to help people with sickle cell
@@ -33,7 +32,7 @@ const AboutUs = () => {
             <h2 className="text-[24px] text-gray-700 font-bold mb-4 ">
               Core Value
             </h2>
-            <p className="text-gray-500"> Love and Humanity</p>
+            <p className="text-gray-500 md:text-[18px]"> Love and Humanity</p>
           </div>
 
           <div className="">
@@ -46,7 +45,7 @@ const AboutUs = () => {
               <h2 className="text-[24px] text-gray-700 font-bold mb-4 ">
                 Mission
               </h2>{" "}
-              <p className="text-gray-500">
+              <p className="text-gray-500 md:text-[18px]">
                 To assist people with sickle cell disease in Ekiti State live
                 the kind of life they long for without being constrained by
                 their health. <br />
@@ -67,7 +66,7 @@ const AboutUs = () => {
               <h2 className="text-[24px] text-gray-700 font-bold mb-4 ">
                 Vision
               </h2>{" "}
-              <p className="text-gray-500">
+              <p className="text-gray-500 md:text-[18px]">
                 To live in a society where the morbidity and death rates
                 associated with sickle cell disease are decreased and where
                 sufficient f ree health care are provided to those who are
@@ -78,7 +77,7 @@ const AboutUs = () => {
         </div>
 
         <section className="px-3 md:px-[80px] lg:px-[130px] py-3 lg:py-6">
-          <h2 className="mt-3 pb-1 text-[20px] font-bold text-[#990019]">
+          <h2 className="mt-3 pb-1 text-[24px] font-bold text-[#990019]">
             Team Management
           </h2>
           <div className="h-1 w-7 mb-1 bg-slate-500"></div>
@@ -92,7 +91,7 @@ const AboutUs = () => {
                   className="h-[95px] w-[95px] rounded-full object-cover"
                 />
               </div>{" "}
-              <p className="text-gray-50  mb-3 text-sm text-center">
+              <p className="text-gray-50  mb-3 text-sm  md:text-[18px] only:text-center">
                 Dr. Olanipekun Ayomide
               </p>
             </div>
@@ -104,7 +103,7 @@ const AboutUs = () => {
                   className="h-[95px] w-[95px] rounded-full object-cover"
                 />
               </div>{" "}
-              <p className="text-gray-50  mb-3 text-sm text-center">
+              <p className="text-gray-50  mb-3 text-sm md:text-[18px] text-center">
                 Dr. Ijabadeniyi
               </p>
             </div>
@@ -116,7 +115,7 @@ const AboutUs = () => {
                   className="h-[95px] w-[95px] rounded-full object-cover"
                 />
               </div>{" "}
-              <p className="text-gray-50  mb-3 text-sm text-center">
+              <p className="text-gray-50  mb-3 text-sm md:text-[18px] text-center">
                 Dr.Mrs Mary Olanipekun
               </p>
             </div>
@@ -128,7 +127,7 @@ const AboutUs = () => {
                   className="h-[95px] w-[95px] rounded-full object-cover"
                 />
               </div>{" "}
-              <p className="text-gray-50  mb-3 text-sm text-center">
+              <p className="text-gray-50  mb-3 md:text-[18px] text-sm text-center">
                 Dr. Lorem Ipsum
               </p>
             </div>
@@ -140,7 +139,7 @@ const AboutUs = () => {
                   className="h-[95px] w-[95px] rounded-full object-cover"
                 />
               </div>{" "}
-              <p className="text-gray-50  mb-1 text-sm text-center">
+              <p className="text-gray-50  mb-1 md:text-[18px] text-sm text-center">
                 Bamisaye Mercy
               </p>
               <p className="text-gray-50  mb-3 text-sm text-center">Secetary</p>
@@ -157,32 +156,33 @@ const AboutUs = () => {
 
           <table>
             <tr className="my-2">
-              <th className="text-gray-800 font-bold ">Lack of Database</th>
+              <th className="text-gray-800 font-bold md:text-[18px] ">
+                Lack of Database
+              </th>
               <td className="py-6 md:pl-3 text-gray-600">
-                <p className="md:px-10 ">
-                  
+                <p className="md:px-10 md:text-[18px] ">
                   There is no proper database of warriors in Ekiti State.
                 </p>
               </td>
             </tr>
             <tr>
-              <th className="text-gray-800 font-bold mr-2 ">
+              <th className="text-gray-800 font-bold mr-2 md:text-[18px] ">
                 Lack of Public Awareness
               </th>
               <td className="py-6 md:pl-3 text-gray-600">
-                <p className="md:px-10 ">
-                  There is lack of public awareness understanding of sickle
-                  cell disease, leading to stigmatization and discrimination for
+                <p className="md:px-10  md:text-[18px] ">
+                  There is lack of public awareness understanding of sickle cell
+                  disease, leading to stigmatization and discrimination for
                   those affected by the condition.
                 </p>
               </td>
             </tr>
             <tr>
-              <th className="text-gray-800 font-bold mr-2">
+              <th className="text-gray-800 font-bold mr-2 md:text-[18px]">
                 Lack of access to good Health Services
               </th>
               <td className="py-6 md:pl-3 text-gray-600">
-                <p className="md:px-10 ">
+                <p className="md:px-10 md:text-[18px] ">
                   Many lack access to specialized medical treatment and are
                   forced to rely on emergency care for pain management.
                 </p>
@@ -192,7 +192,7 @@ const AboutUs = () => {
         </section>
 
         <section className="px-3 md:px-[80px] lg:px-[130px] mt-3 bg-gray-200 py-3 lg:py-6">
-          <h2 className=" pb-1 text-[20px] font-bold text-[#990019]">
+          <h2 className=" pb-1 text-[24px] font-bold text-[#990019]">
             Solution
           </h2>
           <div className="h-1 w-7 mb-1 bg-slate-500"></div>
@@ -200,20 +200,22 @@ const AboutUs = () => {
 
           <table className=" ">
             <tr>
-              <th className="text-gray-800 font-bold mr-2 ">Database</th>
+              <th className="text-gray-800 font-bold mr-2 md:text-[18px]">
+                Database
+              </th>
               <td className="py-6  md:pl-3 text-gray-600">
-                <p className="md:px-10 ">
+                <p className="md:px-10  md:text-[18px]">
                   To have comprehensive data and information on people living
                   with the disorder in Ekiti State.
                 </p>
               </td>
             </tr>
             <tr>
-              <th className="text-gray-800 font-bold mr-2 ">
+              <th className="text-gray-800 font-bold mr-2 md:text-[18px] ">
                 Public Awareness
               </th>
               <td className="py-6  md:pl-3 text-gray-600">
-                <p className="md:px-10 ">
+                <p className="md:px-10 md:text-[18px]">
                   To educate people on genotype compatibility in Ekiti State To
                   raise public knowledge of sickle cell illness and to sensitize
                   and educate the public through standard professional
@@ -222,11 +224,11 @@ const AboutUs = () => {
               </td>
             </tr>
             <tr>
-              <th className="text-gray-800 font-bold mr-2">
+              <th className="text-gray-800 font-bold mr-2 md:text-[18px]">
                 Specialised Centers
               </th>
               <td className="py-6  md:pl-3 text-gray-600">
-                <p className="md:px-10 ">
+                <p className="md:px-10 md:text-[18px] ">
                   To offer clinical services to sickle cell patients who are in
                   pain
                 </p>
@@ -236,13 +238,13 @@ const AboutUs = () => {
         </section>
 
         <section className="px-3 md:px-[80px] lg:px-[130px] py-3 lg:py-6 bg-gray-50">
-          <h2 className="mt-3 pb-1 text-[20px] font-bold text-[#990019]">
+          <h2 className="mt-3 pb-1 text-[24px] font-bold text-[#990019]">
             Analysis
           </h2>
           <div className="h-1 w-7 mb-1 bg-slate-500"></div>
           <div className="h-1 w-10 bg-slate-500 mb-5"></div>
 
-          <div className="grid grid-cols-1 md:grid-col-3 items-centers gap-3 justify-center">
+          <div className="grid grid-cols-1 md:grid-cols-3 items-centers gap-3 justify-center">
             <div className="flex flex-row items-center gap-3 ">
               <h2 className="text-[34px] lg:text-[42px] font-extrabold text-[#990019]">
                 10%
@@ -287,7 +289,7 @@ const AboutUs = () => {
         </section>
 
         <section className=" px-3  md:px-[80px] lg:px-[130px] py-3 lg:py-6 bg-gray-200 ">
-          <h2 className="mt-3 pb-1 text-[20px] font-bold text-[#990019]">
+          <h2 className="mt-3 pb-1 text-[24px] font-bold text-[#990019]">
             Target Audience
           </h2>
           <div className="h-1 w-7 mb-1 bg-slate-500"></div>
@@ -296,16 +298,16 @@ const AboutUs = () => {
           <div className=" py-7">
             <table>
               <tr className="">
-                <th className="text-gray-800 font-bold md:mr-2 ">
+                <th className="text-gray-800 font-bold md:mr-2 md:text-[18px] ">
                   <p>Individuals and families</p>
                 </th>
                 <tr className="border-t border-gray-500 py-3">
                   <th className="text-gray-800 font-bold ">
                     {" "}
-                    <p className="md:px-10 ">Concerns</p>{" "}
+                    <p className="md:px-10 md:text-[18px] ">Concerns</p>{" "}
                   </th>
                   <td className="py-6  pl-3 text-gray-600">
-                    <p className="md:px-10 ">
+                    <p className="md:px-10 md:text-[18px] ">
                       {" "}
                       Pain management, Access to healthcare, Education and
                       resources, Financial burden, Stigma and discrimination,
@@ -316,10 +318,10 @@ const AboutUs = () => {
                 <tr className="border-b border-gray-500">
                   <th className="text-gray-800 font-bold ">
                     {" "}
-                    <p className="md:px-10 ">Community</p>
+                    <p className="md:px-10 md:text-[18px]">Community</p>
                   </th>
                   <td className=" md:pl-3 text-gray-600 py-6">
-                    <p className="md:px-10 ">
+                    <p className="md:px-10 md:text-[18px]">
                       Religious Centers, Hospital, Schools, Offices, Hangouts,
                       Support groups.
                     </p>
@@ -328,12 +330,17 @@ const AboutUs = () => {
               </tr>
               <tr className="">
                 <th className="text-gray-800 font-bold  ">
-                  <p className="md:px-10 "> Medical professionals</p>
+                  <p className="md:px-10 md:text-[18px]">
+                    {" "}
+                    Medical professionals
+                  </p>
                 </th>
                 <tr>
-                  <th className="text-gray-800 font-bold mr-2 ">Concerns</th>
+                  <th className="text-gray-800 font-bold mr-2 md:text-[18px]">
+                    Concerns
+                  </th>
                   <td className="md:pl-3 text-gray-600 py-6">
-                    <p className="md:px-10 ">
+                    <p className="md:px-10 md:text-[18px]">
                       {" "}
                       Lack of knowledge or training, Managing acute
                       complications, Pain management, Limited resources,
@@ -344,10 +351,10 @@ const AboutUs = () => {
                 <tr className="border-b border-gray-500">
                   <th className="text-gray-800 font-bold mr-2 ">
                     {" "}
-                    <p className="md:px-10 ">Community</p>
+                    <p className="md:px-10 md:text-[18px]">Community</p>
                   </th>
                   <td className=" md:pl-3 text-gray-600 py-6">
-                    <p className="md:px-10 ">
+                    <p className="md:px-10 md:text-[18px]">
                       {" "}
                       Hospitals and Clinics, Community health centers, Private
                       practice, Universities and research institutions
@@ -358,30 +365,6 @@ const AboutUs = () => {
             </table>
           </div>
         </section>
-
-        {/* <section className="bg-gray-50 py-4 px-3  md:px-[80px] lg:px-[130px]">
-          <h2 className="mt-3 pb-1 text-[20px] font-bold text-[#990019]">
-            Key Activities
-          </h2>
-          <div className="h-1 w-7 mb-1 bg-slate-500"></div>
-          <div className="h-1 w-10 bg-slate-500 mb-2"></div>
-
-          <div className="flex flex-row justify-center gap-10  items-center">
-            <div className="mt-3 bg-yellow-300 shadow rounded-lg px-2 py-2 w-full ">
-              <p className="text-gray-500 text-md text-center ">
-                Plan medical outreach programs to assist sickle cell warriors in
-                Ekiti State
-              </p>
-            </div>
-            <div className="bg-yellow-300 shadow rounded-lg  px-2 py-2 w-full">
-              <p className="text-gray-500 text-md  text-center">
-                Create a club where those l iving with the disorder can share
-                their success story on how they have been able to live beyond
-                the disorder;
-              </p>
-            </div>
-          </div>
-        </section> */}
       </div>
 
       <Footer />
