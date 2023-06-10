@@ -17,7 +17,7 @@ const Gallery = () => {
             showStatus={false}
             showIndicators={false}
             showThumbs={false}
-            interval={5000}
+            interval={4000}
           >
             <div>
               {" "}
@@ -25,7 +25,7 @@ const Gallery = () => {
                 src="/oaImage1.webp"
                 loading="lazy"
                 alt="gallery"
-                className="object-cover h-[280px] w-full md:h-[700px] md:w-full "
+                className="object-contain bg-slate-100 h-[280px] w-full md:h-[700px] md:w-full "
               />
             </div>
             <div>
@@ -34,7 +34,7 @@ const Gallery = () => {
                 src="/oaImage2.webp"
                 loading="lazy"
                 alt="gallery"
-                className="object-cover h-[280px] w-full md:h-[700px] md:w-full "
+                className="object-contain bg-slate-100 h-[280px] w-full md:h-[700px] md:w-full "
               />
             </div>
             <div>
@@ -43,7 +43,7 @@ const Gallery = () => {
                 src="/oaImage3.webp"
                 loading="lazy"
                 alt="gallery"
-                className="object-cover h-[280px] w-full md:h-[700px] md:w-full "
+                className="object-contain bg-slate-100 h-[280px] w-full md:h-[700px] md:w-full "
               />
             </div>
             <div>
@@ -52,7 +52,7 @@ const Gallery = () => {
                 src="/oaImage13.jpg"
                 loading="lazy"
                 alt="gallery"
-                className="object-cover h-[280px] w-full md:h-[700px] md:w-full "
+                className="object-contain bg-slate-100 h-[280px] w-full md:h-[700px] md:w-full "
               />
             </div>
             <div>
@@ -61,7 +61,7 @@ const Gallery = () => {
                 src="/oaImage8.jpg"
                 loading="lazy"
                 alt="gallery"
-                className="object-cover h-[280px] w-full md:h-[700px] md:w-full "
+                className="object-contain bg-slate-100 h-[280px] w-full md:h-[700px] md:w-full "
               />
             </div>
             <div>
@@ -70,7 +70,7 @@ const Gallery = () => {
                 src="/oaImage14.jpg"
                 loading="lazy"
                 alt="gallery"
-                className="object-cover h-[280px] w-full md:h-[700px] md:w-full "
+                className="object-contain h-[280px] bg-slate-100 w-full md:h-[700px] md:w-full "
               />
             </div>
           </Carousel>

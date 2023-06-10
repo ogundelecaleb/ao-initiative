@@ -13,18 +13,24 @@ const Header = () => {
   return (
     <div className="sticky w-full bg-gray-100 z-1000 lg:relative ">
       <div className="flex flex-row items-center  justify-between relative px-[30px] md:px-[80px] lg:px-[130px] py-[12px]">
-        <img src="/oaLogo.png" alt="" className="lg:h-[45px] h-[38px]" />
+       <Link to="/">
+          <img src="/oa-logo.png" alt="" className="lg:h-[45px] h-[38px]" /> 
+       </Link>
+    
 
         <nav className="hidden lg:inline-block">
           <ul className="flex flex-row items-center justify-between gap-[30px] ">
-            <li className="cursor-pointer font-bold hover:text-[##990019] hover:border-b-[#990019]">
+            <li className="cursor-pointer font-bold hover:text-[#990019] hover:border-b-[#990019]">
               <Link to="/">Home</Link>{" "}
             </li>
-            <li className="cursor-pointer font-bold hover:text-[##990019] hover:border-b-[#990019]">
+            <li className="cursor-pointer font-bold hover:text-[#990019] hover:border-b-[#990019]">
               <Link to="/aboutUs">About Us</Link>{" "}
             </li>
-            <li className="cursor-pointer font-bold hover:text-[##990019] hover:border-b-[#990019]">
+            <li className="cursor-pointer font-bold hover:text-[#990019] hover:border-b-[#990019]">
               <Link to="/gallery">Gallery</Link>{" "}
+            </li>
+            <li className="cursor-pointer font-bold hover:text-[#990019] hover:border-b-[#990019]">
+              <Link to="/event">Event</Link>{" "}
             </li>
           </ul>
         </nav>
@@ -54,6 +60,12 @@ const Header = () => {
                 {" "}
                 <li className="cursor-pointer border-b hover:text-[##990019] hover:border-b-[#990019]">
                   Gallery{" "}
+                </li>
+              </Link>
+              <Link to="/event">
+                {" "}
+                <li className="cursor-pointer border-b hover:text-[##990019] hover:border-b-[#990019]">
+                  Event{" "}
                 </li>
               </Link>
             </ul>

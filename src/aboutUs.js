@@ -49,8 +49,8 @@ const AboutUs = () => {
                 To assist people with sickle cell disease in Ekiti State live
                 the kind of life they long for without being constrained by
                 their health. <br />
-                To work hard in Ekiti State to eradicate sickle cell illness f
-                rom society an d to drastically reduce the number of persons who
+                To work hard in Ekiti State to eradicate sickle cell illness
+                from society and to drastically reduce the number of persons who
                 have the disorder.
               </p>
             </div>
@@ -78,7 +78,7 @@ const AboutUs = () => {
 
         <section className="px-3 md:px-[80px] lg:px-[130px] py-3 lg:py-6">
           <h2 className="mt-3 pb-1 text-[24px] font-bold text-[#990019]">
-            Team Management
+            Board Of Trustees
           </h2>
           <div className="h-1 w-7 mb-1 bg-slate-500"></div>
           <div className="h-1 w-10 bg-slate-500 mb-5"></div>
@@ -91,7 +91,7 @@ const AboutUs = () => {
                   className="h-[95px] w-[95px] rounded-full object-cover"
                 />
               </div>{" "}
-              <p className="text-gray-50  mb-3 text-sm  md:text-[18px] only:text-center">
+              <p className="text-gray-50  mb-3 text-sm md:text-[18px] text-center">
                 Dr. Olanipekun Ayomide
               </p>
             </div>
@@ -128,7 +128,7 @@ const AboutUs = () => {
                 />
               </div>{" "}
               <p className="text-gray-50  mb-3 md:text-[18px] text-sm text-center">
-                Dr. Lorem Ipsum
+                Barrister Temidayo Akeredolu
               </p>
             </div>
             <div className="bg-yellow-400 h-20 shadow pt-[60px] pb-[50px] px-3 relative rounded-t-[16px]">
