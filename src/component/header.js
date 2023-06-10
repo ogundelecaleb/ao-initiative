@@ -42,8 +42,8 @@ const Header = () => {
         </button>
 
         {showMenu && (
-          <div className="bg-white absolute right-1 -bottom-[340%] lg:hidden w-[200px] py-5 px-3 z-10">
-            <ul className="flex flex-col gap-[10px] mb-2 ">
+          <div className="bg-white absolute right-14 -bottom-[120%] lg:hidden w-[290px] py-5 px-3 z-99999999999999999">
+            <ul className="flex  gap-[10px] mb-2 ">
               <Link to="/">
                 {" "}
                 <li className="cursor-pointer border-b  hover:text-[##990019] hover:border-b-[#990019]">
