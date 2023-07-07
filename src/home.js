@@ -12,7 +12,7 @@ const Home = () => {
   //   window.location.href = `mailto:ogundelecaleb14@gmail?subject=${formData.subject}&body=Hi, My Name is ${formData.name}. ${formData.message} (${formData.email})`}
 
   const onSubmit = (formData) => {
-    window.location.href = `mailto:ogundelecaleb14@gmail?subject=${formData.subject}&body=Hi, My Name is ${formData.name}. ${formData.message} (${formData.email})`;
+    window.location.href = `mailto:olanipekunayomideinitiative@gmail?subject=${formData.subject}&body=Hi, My Name is ${formData.name}. ${formData.message} (${formData.email})`;
   };
   return (
     <div>
@@ -166,11 +166,11 @@ const Home = () => {
             <div className="flex flex-col items-center gap-[40px] md:flex-row md:gap-[80px]">
               <div className="md:w-[50%] w-full text-gray-500 text-[20px] text-justify ">
                 <h3 className="text-[24px] text-gray-600 font-bold mb-4 ">
-                  About AO.INITIATIVE
+                  About O.A INITIATIVE
                 </h3>
                 <p>
                   {" "}
-                  O.A INITIATIVE foundation is a non-profit organization
+                  O.A INITIATIVE is a non-profit organization
                   pioneered by Dr Olanipekun Ayomide, that was established in
                   2019 in Ekiti. The charity was founded out of a desire to help
                   people with sickle cell disease live full, purposeful lives
@@ -197,12 +197,12 @@ const Home = () => {
                   Ekiti State Sickle Cell Warriors Enrollment
                 </h3>
                 <p className=" text-gray-500 lg:text-[18px] text-[16px]  mb-9 ">
-                  Enroll into the Ekiti State Health Insurance Sickle Scheme to
+                  Enroll into the Ekiti State Health Insurance Scheme to
                   have you updated on our data base. <br /> <br /> The scheme is
                   aimed at providing better services for those who are suffering
                   from this disease and also to ensure that everyone who belong
                   to the state receives proper treatment. <br /> <br /> The
-                  scheme was launched by OA-Initiative in conjuction with Ekiti
+                  scheme was launched by O.A-Initiative in conjuction with Ekiti
                   State Health Insurance.
                 </p>
                 <button className="animate-bounce px-3 py-2 bg-yellow-400 rounded-lg text-[#990019] ">
@@ -211,7 +211,7 @@ const Home = () => {
               </div>
               <div className="md:w-[50%] w-full  ">
                 <img
-                  src="/oaImage9.jpg"
+                  src="/ESHIS.jpg"
                   alt="ao-initiative members"
                   className="object-contain hidden md:block"
                 />
