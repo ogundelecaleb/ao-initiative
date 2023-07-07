@@ -14,7 +14,7 @@ const Footer = () => {
             <h4 className="text-gray-100 py-2 tracking-wider ">
               Enriching lifes...
             </h4>
-            <p className="text-gray-100 ">
+            <p className="text-gray-100 text-sm md:text-md ">
               OA Initiative is a non-profit organization dedicated to improving
               the lives of individuals and families affected by sickle cell
               disease.
@@ -25,7 +25,7 @@ const Footer = () => {
               <h4 className="text-gray-200  tracking-wider font-bold text-md">
                 Quick Link
               </h4>
-              <ul>
+              <ul className="text-sm md:text-md">
                 <Link to="/">
                   <li className="cursor-pointer">
                     <p className="text-gray-100 py-2 tracking-wider">Home</p>
@@ -43,6 +43,11 @@ const Footer = () => {
                     <p className="text-gray-100 py-2 tracking-wider">Gallery</p>
                   </li>
                 </Link>
+                <Link to="/event">
+                  <li  className="cursor-pointer">
+                    <p className="text-gray-100 py-2 tracking-wider">Event</p>
+                  </li>
+                </Link>
 
                 <Link to="/signup">
                   <li  className="cursor-pointer">
@@ -55,13 +60,13 @@ const Footer = () => {
               <h4 className="text-gray-200 text-md tracking-wider font-bold">
                 Contact
               </h4>
-              <ul className="contact text-gray-100">
+              <ul className="contact text-gray-100 text-sm md:text-md">
                 <li className="py-2 flex gap-1 items-center">
                   <BsTelephone />
-                  <p>+234 8148942186</p>
+                  <p>+234 9029051446</p>
                 </li>
                 <li className="py-2 flex gap-1 items-center">
-                  <GoLocation /> <p>20, Oore Ofe quarters, Ekiti State. </p>
+                  <GoLocation /> <p>Suite 2, No. 66, Bank Road, Ado Ekiti. </p>
                 </li>
                 <li className="py-2 flex gap-1 items-center">
                   <GoMail />
@@ -70,18 +75,18 @@ const Footer = () => {
                 <li>
                   {" "}
                   <SocialIcon
-                    url="https://www.twitter.com/kailmarvel"
-                    fgColor="gray"
+                    url="https://twitter.com/OAinitiative_"
+                    fgColor="white"
                     bgColor="transparent"
                   />
                   <SocialIcon
-                    url="https://www.linkedin.com/in/ogundele-caleb-b57880208"
-                    fgColor="gray"
+                    url="https://www.linkedin.com/in/o-a-initiative-3bb616275"
+                    fgColor="white"
                     bgColor="transparent"
                   />
                   <SocialIcon
-                    url="https://www.instagram.com/kailmarvel"
-                    fgColor="gray"
+                    url="https://www.instagram.com/oa_initiative/"
+                    fgColor="white"
                     bgColor="transparent"
                   />
                 </li>
@@ -89,7 +94,7 @@ const Footer = () => {
             </div>
             <div className="box-item ">
               <h4 className="text-md text-gray-200 font-bold">Legal</h4>
-              <ul className="text-gray-100">
+              <ul className="text-gray-100 text-sm md:text-md">
                 <li>
                   <p className="py-2">Terms of Use</p>
                 </li>
@@ -100,7 +105,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <p className="text-gray-100  mt-8 pb-4 text-center ">
+        <p className="text-gray-100  mt-8 pb-4 text-center text-xs md:text-md ">
           © OA.Initiative 2023. All rights reserved.
         </p>
       </div>

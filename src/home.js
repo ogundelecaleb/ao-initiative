@@ -1,12 +1,46 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "./component/header";
 import { Link } from "react-router-dom";
 import Footer from "./component/footer";
 import { motion as m } from "framer-motion";
 import { useForm } from "react-hook-form";
+import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 
 const Home = () => {
   const { register, handleSubmit } = useForm();
+  const [faq1, setFaq1] = useState(false);
+  const [faq2, setFaq2] = useState(false);
+  const [faq3, setFaq3] = useState(false);
+  const [faq4, setFaq4] = useState(false);
+  const [faq5, setFaq5] = useState(false);
+  const [faq6, setFaq6] = useState(false);
+  const [faq7, setFaq7] = useState(false);
+  const [faq8, setFaq8] = useState(false);
+
+  const handleFaq1 = () => {
+    setFaq1(!faq1);
+  };
+  const handleFaq2 = () => {
+    setFaq2(!faq2);
+  };
+  const handleFaq3 = () => {
+    setFaq3(!faq3);
+  };
+  const handleFaq4 = () => {
+    setFaq4(!faq4);
+  };
+  const handleFaq5 = () => {
+    setFaq5(!faq5);
+  };
+  const handleFaq6 = () => {
+    setFaq6(!faq6);
+  };
+  const handleFaq7 = () => {
+    setFaq7(!faq7);
+  };
+  const handleFaq8 = () => {
+    setFaq8(!faq8);
+  };
 
   // const onSubmit: SubmitHandler<Inputs> = (formData) => {
   //   window.location.href = `mailto:ogundelecaleb14@gmail?subject=${formData.subject}&body=Hi, My Name is ${formData.name}. ${formData.message} (${formData.email})`}
@@ -170,12 +204,11 @@ const Home = () => {
                 </h3>
                 <p>
                   {" "}
-                  O.A INITIATIVE is a non-profit organization
-                  pioneered by Dr Olanipekun Ayomide, that was established in
-                  2019 in Ekiti. The charity was founded out of a desire to help
-                  people with sickle cell disease live full, purposeful lives
-                  without regret or setbacks as a result of health issues in
-                  Ekiti and elsewhere.
+                  O.A INITIATIVE is a non-profit organization pioneered by Dr
+                  Olanipekun Ayomide, that was established in 2019 in Ekiti. The
+                  charity was founded out of a desire to help people with sickle
+                  cell disease live full, purposeful lives without regret or
+                  setbacks as a result of health issues in Ekiti and elsewhere.
                 </p>
                 <button className="bg-yellow-400 px-2 py-2 rounded-lg text-[#990019] mt-4">
                   <Link to="https://docs.google.com/forms/d/e/1FAIpQLSf0Cp-gNc_hCrCULZS_Du9s59Zt9pH1c9XjDEfC8NAzmYQZrA/viewform">
@@ -197,8 +230,8 @@ const Home = () => {
                   Ekiti State Sickle Cell Warriors Enrollment
                 </h3>
                 <p className=" text-gray-500 lg:text-[18px] text-[16px]  mb-9 ">
-                  Enroll into the Ekiti State Health Insurance Scheme to
-                  have you updated on our data base. <br /> <br /> The scheme is
+                  Enroll into the Ekiti State Health Insurance Scheme to have
+                  you updated on our data base. <br /> <br /> The scheme is
                   aimed at providing better services for those who are suffering
                   from this disease and also to ensure that everyone who belong
                   to the state receives proper treatment. <br /> <br /> The
@@ -220,6 +253,230 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <section className=" py-[48px] px-[30px]   relative md:px-[80px] lg:px-[130px]">
+        <h2 className="text-[1.7rem] lg:text-[2.5rem] font-extrabold text-center text-gray-600 tracking-wide mb-3">
+          Frequently Asked Questions
+        </h2>
+        <div className="py-7 border-t border-b ">
+          <div className="flex justify-between items-center mb-2">
+            <p className="text-gray-500 font-bold text-lg">How do i enroll?</p>{" "}
+            {faq1 ? (
+              <button onClick={handleFaq1}>
+                <IoIosArrowUp />{" "}
+              </button>
+            ) : (
+              <button onClick={handleFaq1}>
+                <IoIosArrowDown />
+              </button>
+            )}
+          </div>
+          {faq1 ? (
+            <p className="py-4 px-5 bg-slate-100">
+              You will first enrol on O.A. Initiative Database which is FREE. A
+              Representative will link you to the Approved Primary Health Care
+              Faclity around your area of residence.
+            </p>
+          ) : (
+            ""
+          )}
+        </div>
+        <div className="py-7  border-b ">
+          <div className="flex justify-between items-center mb-2">
+            <p className="text-gray-500 font-bold text-lg">
+              Will I need to pay for enrollment at the approved Primary Health
+              Care Facility?
+            </p>{" "}
+            {faq2 ? (
+              <button onClick={handleFaq2}>
+                <IoIosArrowUp />{" "}
+              </button>
+            ) : (
+              <button onClick={handleFaq2}>
+                <IoIosArrowDown />
+              </button>
+            )}
+          </div>
+          {faq2 ? (
+            <p className="py-4 px-5 bg-slate-100">
+              No, enrollment at the approved Primary Health Care Facility is
+              FREE.
+            </p>
+          ) : (
+            ""
+          )}
+        </div>
+        <div className="py-7  border-b ">
+          <div className="flex justify-between items-center mb-2">
+            <p className="text-gray-500 font-bold text-lg">
+              Will i need to submit any document before enrolment?
+            </p>{" "}
+            {faq3 ? (
+              <button onClick={handleFaq3}>
+                <IoIosArrowUp />{" "}
+              </button>
+            ) : (
+              <button onClick={handleFaq3}>
+                <IoIosArrowDown />
+              </button>
+            )}
+          </div>
+          {faq3 ? (
+            <p className="py-4 px-5 bg-slate-100">
+              NO, you only need your NIN.
+            </p>
+          ) : (
+            ""
+          )}
+        </div>
+        <div className="py-7  border-b ">
+          <div className="flex justify-between items-center mb-2">
+            <p className="text-gray-500 font-bold text-lg">
+              What if the Primary Health Care Faclity cannot take care of me,
+              What do i do?
+            </p>{" "}
+            {faq4 ? (
+              <button onClick={handleFaq4}>
+                <IoIosArrowUp />{" "}
+              </button>
+            ) : (
+              <button onClick={handleFaq4}>
+                <IoIosArrowDown />
+              </button>
+            )}
+          </div>
+          {faq4 ? (
+            <p className="py-4 px-5 bg-slate-100">
+              You will be transfered to the approved Secondary Health Care
+              Facility for FREE.
+            </p>
+          ) : (
+            ""
+          )}
+        </div>
+
+        <div className="py-7  border-b ">
+          <div className="flex justify-between items-center mb-2">
+            <p className="text-gray-500 font-bold text-lg">
+              After my enrollment, when will have access to medical care?
+            </p>{" "}
+            {faq5 ? (
+              <button onClick={handleFaq5}>
+                <IoIosArrowUp />{" "}
+              </button>
+            ) : (
+              <button onClick={handleFaq5}>
+                <IoIosArrowDown />
+              </button>
+            )}
+          </div>
+          {faq5 ? (
+            <p className="py-4 px-5 bg-slate-100 text-justify">
+              The following month after your enrollment. That is, if you enrol
+              in May, you will start having access in June.
+            </p>
+          ) : (
+            ""
+          )}
+        </div>
+
+        <div className="py-7  border-b ">
+          <div className="flex justify-between items-center mb-2">
+            <p className="text-gray-500 font-bold text-lg">
+              Can i enroll on behalf of someone?
+            </p>{" "}
+            {faq6 ? (
+              <button onClick={handleFaq6}>
+                <IoIosArrowUp />{" "}
+              </button>
+            ) : (
+              <button onClick={handleFaq6}>
+                <IoIosArrowDown />
+              </button>
+            )}
+          </div>
+          {faq6 ? (
+            <p className="py-4 px-5 bg-slate-100 text-justify">
+              NO. You cant enroll for anyone
+            </p>
+          ) : (
+            ""
+          )}
+        </div>
+
+        <div className="py-7  border-b ">
+          <div className="flex justify-between items-center mb-2">
+            <p className="text-gray-500 font-bold text-lg">
+              Can i enrol someone outside Ekiti State?
+            </p>{" "}
+            {faq7 ? (
+              <button onClick={handleFaq7}>
+                <IoIosArrowUp />{" "}
+              </button>
+            ) : (
+              <button onClick={handleFaq7}>
+                <IoIosArrowDown />
+              </button>
+            )}
+          </div>
+          {faq7 ? (
+            <p className="py-4 px-5 bg-slate-100">
+              Enrollment and beneficiaries are meant for Ekiti State residence
+              only.
+            </p>
+          ) : (
+            ""
+          )}
+        </div>
+
+        <div className="py-7  border-b ">
+          <div className="flex justify-between items-center mb-2">
+            <p className="text-gray-500 font-bold text-lg">
+              Will i pay for drugs? Either monthly/weekly/yearly?
+            </p>{" "}
+            {faq8 ? (
+              <button onClick={handleFaq8}>
+                <IoIosArrowUp />{" "}
+              </button>
+            ) : (
+              <button onClick={handleFaq8}>
+                <IoIosArrowDown />
+              </button>
+            )}
+          </div>
+          {faq8 ? (
+            <p className="py-4 px-5 bg-slate-100">NO payment at all.</p>
+          ) : (
+            ""
+          )}
+        </div>
+
+        <div className="py-7  border-b ">
+          <div className="flex justify-between items-center mb-2">
+            <p className="text-gray-500 font-bold text-lg">
+              In case of Emergency/Routine Checkup, do i need to pay for Card
+              Registration/for Consultation?
+            </p>{" "}
+            {faq8 ? (
+              <button onClick={handleFaq8}>
+                <IoIosArrowUp />{" "}
+              </button>
+            ) : (
+              <button onClick={handleFaq8}>
+                <IoIosArrowDown />
+              </button>
+            )}
+          </div>
+          {faq8 ? (
+            <p className="py-4 px-5 bg-slate-100">
+              From point of Entry to Lab test to Drugs, everything is FREE.
+            </p>
+          ) : (
+            ""
+          )}
+        </div>
+
+        <div></div>
+      </section>
       <section
         id="contact"
         className="bg-gray-200 py-[48px] px-[30px] md:px-[80px] lg:px-[130px] "

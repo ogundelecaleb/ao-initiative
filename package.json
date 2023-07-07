@@ -1,5 +1,6 @@
 {
   "name": "ao-initiative",
+  "homepage": "https://oainitiative.org/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

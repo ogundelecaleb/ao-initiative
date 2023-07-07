@@ -3,6 +3,8 @@ import React from "react";
 import Header from "./component/header";
 import { GoLocation, GoMail } from "react-icons/go";
 import { BsTelephone } from "react-icons/bs";
+import { SocialIcon } from "react-social-icons";
+import { Link } from "react-router-dom";
 
 const SignUp = () => {
   return (
@@ -168,79 +170,108 @@ const SignUp = () => {
         </div>
       </div>
       <footer className="bg-gray-100  py-8 px-3 md:px-[80px] lg:px-[130px]">
-        <div className="wrapper reveal">
-          <div className="flex lg:flex-row flex-col w-full gap-3">
-            <div className="flex-2 text-white pr-4">
-              <img src="/oaLogo.png" alt="" />
-              <h4 className="text-gray-600 py-2 tracking-wider ">
-                Enriching lifes...
+      <div className="wrapper reveal">
+        <div className="flex lg:flex-row flex-col w-full gap-3">
+          <div className="flex-2 text-white pr-4 md:w-[35%] lg:w-[40%]">
+            <img src="/oaLogo.png" alt="" />
+            <h4 className="text-[#990019] py-2 tracking-wider ">
+              Enriching lifes...
+            </h4>
+            <p className="text-[#990019] text-sm md:text-md ">
+              OA Initiative is a non-profit organization dedicated to improving
+              the lives of individuals and families affected by sickle cell
+              disease.
+            </p>
+          </div>
+          <div className="flex-grow flex lg:flex-row md:flex-row flex-col gap-4  justify-between text-white w-full">
+            <div class="box-item">
+              <h4 className="text-[#990019]  tracking-wider font-bold text-md">
+                Quick Link
               </h4>
-              <p className="text-gray-600 ">
-                OA Initiative is a non-profit organization dedicated to
-                improving the lives of individuals and families affected by
-                sickle cell disease.
-              </p>
-            </div>
-            <div className="flex-grow flex lg:flex-row md:flex-row flex-col gap-4  justify-between text-white w-full">
-              <div class="box-item">
-                <h4 className="text-gray-800  tracking-wider font-bold text-md">
-                  Quick Link
-                </h4>
-                <ul className="text-[9px]">
-                  <li>
-                    <p className="text-gray-600 py-2 tracking-wider">Home</p>
+              <ul className="text-sm md:text-md text-[#990019]">
+                <Link to="/">
+                  <li className="cursor-pointer">
+                    <p className=" py-2 tracking-wider">Home</p>
                   </li>
-                  <li>
-                    <p className="text-gray-600 py-2 tracking-wider">
+                </Link>
+                <Link to="/aboutUs">
+                  <li  className="cursor-pointer">
+                    <p className="py-2 tracking-wider">
                       About Us
                     </p>
                   </li>
-                  <li>
-                    <p className="text-gray-600 py-2 tracking-wider">Gallery</p>
+                </Link>
+                <Link to="/gallery">
+                  <li  className="cursor-pointer">
+                    <p className=" py-2 tracking-wider">Gallery</p>
                   </li>
-                  <li>
-                    <p className="text-gray-600 py-2 tracking-wider">Enroll</p>
+                </Link>
+                <Link to="/event">
+                  <li  className="cursor-pointer">
+                    <p className=" py-2 tracking-wider">Event</p>
                   </li>
-                  <li>
-                    <p className="text-gray-600 py-2 tracking-wider">FAQ</p>
+                </Link>
+
+                <Link to="/signup">
+                  <li  className="cursor-pointer">
+                    <p className=" py-2 tracking-wider"> Enroll</p>
                   </li>
-                </ul>
-              </div>
-              <div className="box-item">
-                <h4 className="text-gray-800 text-md tracking-wider font-bold">
-                  Contact
-                </h4>
-                <ul className="contact text-gray-600">
-                  <li className="py-2 flex gap-1 items-center">
-                    <BsTelephone />
-                    <p>+234 8148942186</p>
-                  </li>
-                  <li className="py-2 flex gap-1 items-center">
-                    <GoLocation /> <p>20, Oore Ofe quarters, Ekiti State. </p>
-                  </li>
-                  <li className="py-2 flex gap-1 items-center">
-                    <GoMail />
-                    <p>olanipekunayomideinitiative@gmail.com</p>
-                  </li>
-                </ul>
-              </div>
-              <div className="box-item ">
-                <h4 className="text-md text-gray-800 font-bold">Legal</h4>
-                <ul className="text-[9px] text-gray-600">
-                  <li>
-                    <p className="py-2">Terms of Use</p>
-                  </li>
-                  <li>
-                    <p className="py-2">Privacy Policy</p>
-                  </li>
-                </ul>
-              </div>
+                </Link>
+              </ul>
+            </div>
+            <div className="box-item">
+              <h4 className="text-[#990019] text-md tracking-wider font-bold">
+                Contact
+              </h4>
+              <ul className="contact text-[#990019] text-sm md:text-md">
+                <li className="py-2 flex gap-1 items-center">
+                  <BsTelephone />
+                  <p>+234 8148942186</p>
+                </li>
+                <li className="py-2 flex gap-1 items-center">
+                  <GoLocation /> <p>20, Oore Ofe quarters, Ekiti State. </p>
+                </li>
+                <li className="py-2 flex gap-1 items-center">
+                  <GoMail />
+                  <p>olanipekunayomideinitiative@gmail.com</p>
+                </li>
+                <li>
+                  {" "}
+                  <SocialIcon
+                    url="https://twitter.com/OAinitiative_"
+                    fgColor="#990019"
+                    bgColor="transparent"
+                  />
+                  <SocialIcon
+                    url="https://www.linkedin.com/in/o-a-initiative-3bb616275"
+                    fgColor="#990019"
+                    bgColor="transparent"
+                  />
+                  <SocialIcon
+                    url="https://www.instagram.com/oa_initiative/"
+                    fgColor="#990019"
+                    bgColor="transparent"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div className="box-item ">
+              <h4 className="text-md text-[#990019] font-bold">Legal</h4>
+              <ul className="text-[#990019] text-sm md:text-md">
+                <li>
+                  <p className="py-2">Terms of Use</p>
+                </li>
+                <li>
+                  <p className="py-2">Privacy Policy</p>
+                </li>
+              </ul>
             </div>
           </div>
-          <p className="text-gray-600  mt-8 mb-2 text-center">
-            © OA.Initiative 2023. All rights reserved.
-          </p>
         </div>
+        <p className="text-[#990019] mt-8 pb-4 text-center text-xs md:text-md ">
+          © OA.Initiative 2023. All rights reserved.
+        </p>
+      </div>
       </footer>
     </>
   );
