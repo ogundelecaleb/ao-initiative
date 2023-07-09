@@ -1,50 +1,96 @@
-import React from 'react';
-import CountdownTimer from './component/CountdownTimer';
+import React, { useState } from "react";
+// import CountdownTimer from "./component/CountdownTimer";
 
-import './App.css';
+import "./App.css";
 
 const Countdown = () => {
-  const THREE_DAYS_IN_MS = 17 * 24 * 60 * 60 * 1000;
-  const NOW_IN_MS = new Date().getTime();
+  const [days, setDays] = useState("");
+  const [hours, setHours] = useState("");
+  const [minutes, setMinutes] = useState("");
+  const [seconds, setSeconds] = useState("");
 
-  const dateTimeAfterThreeDays = NOW_IN_MS + THREE_DAYS_IN_MS;
+//   const THREE_DAYS_IN_MS = 17 * 24 * 60 * 60 * 1000;
+//   const NOW_IN_MS = new Date().getTime();
+
+//   const dateTimeAfterThreeDays = NOW_IN_MS + THREE_DAYS_IN_MS;
+
+  // Set the date we're counting down to
+  var countDownDate = new Date("Jul 17, 2023 15:37:25").getTime();
+
+  // Update the count down every 1 second
+  var x = setInterval(function () {
+    // Get today's date and time
+    var now = new Date().getTime();
+
+    // Find the distance between now and the count down date
+    var distance = countDownDate - now;
+
+    // Time calculations for days, hours, minutes and seconds
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor(
+      (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+    );
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    setSeconds(seconds);
+    setMinutes(minutes);
+    setHours(hours);
+    setDays(days);
+    // Output the result in an element with id="demo"
+
+    // If the count down is over, write some text
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+  }, 1000);
 
   return (
-    <div className='bg-[#990019] h-screen flex flex-col justify-center items-center'>
-      <h1 className='md:text-xl text-lg font-extrabold text-white mb-4'>OA Initiative Website Will Be Launched In</h1>
-      <CountdownTimer targetDate={dateTimeAfterThreeDays} />
+    <div className="bg-[#990019] h-screen flex flex-col justify-center items-center">
+         <img
+          src="/celebrate.png"
+          alt="celebrate"
+          className="lg:h-[180px] h-[80px]"
+        />
+      <h1 className="md:text-xl text-center text-lg font-extrabold text-white mb-4">
+        OA Initiative Website Will Be Launched In
+      </h1>
+      {/* <CountdownTimer targetDate={dateTimeAfterThreeDays} /> */}
 
+      <div className="show-counter flex text-[18px] md:text-[28px] font-extrabold text-white">
+       
+        <div className="flex flex-col gap-3 countdown ">
+          <h2> {days}</h2> <p>Days</p>
+        </div>
+        <p className="text-white">:</p>
+        <div className="flex flex-col countdown gap-3 ">
+          <h2> {hours}</h2> <p>Hours</p>
+        </div>
+        <p className="text-white">:</p>
+        <div className="flex flex-col countdown gap-3 ">
+          <h2> {minutes}</h2> <p>Minutes</p>
+        </div>   <p className="text-white">:</p>
+        <div className="flex flex-col countdown gap-3 ">
+          <h2> {seconds}</h2> <p>Seconds</p>
+        </div>
+      </div>
 
-      <div className='p-5 bg-slate-50 rounded-full mt-6'><img src="/oa-logo.png" alt='oa logo' className="lg:h-[45px] h-[38px]"/></div>
+      {/* <p>
+        {days} + "d " + {hours} + "h " + {minutes} + "m " + {seconds} + "s "
+      </p> */}
+      <div className="p-5 bg-slate-50 rounded-full mt-6">
+        <img
+          src="/oa-logo.png"
+          alt="oa logo"
+          className="lg:h-[45px] h-[38px]"
+        />
+      </div>
     </div>
   );
-}
-
+};
 
 export default Countdown;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // import React, { useState, useRef, useEffect } from 'react'
 
