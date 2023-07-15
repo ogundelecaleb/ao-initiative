@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Header from "./component/header";
 import { Link } from "react-router-dom";
 import Footer from "./component/footer";
 import { motion as m } from "framer-motion";
 import { useForm } from "react-hook-form";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
+import Modal from "./component/Modal";
 
 const Home = () => {
   const { register, handleSubmit } = useForm();
@@ -16,6 +17,24 @@ const Home = () => {
   const [faq6, setFaq6] = useState(false);
   const [faq7, setFaq7] = useState(false);
   const [faq8, setFaq8] = useState(false);
+  const [faq9, setFaq9] = useState(false);
+  const [enrolModal, setEnrolModal] = useState(false);
+
+  useEffect(() => {
+    let userData = localStorage.getItem("modalCheck");
+
+    if (userData.length < 0) {
+      setTimeout(() => {
+        setEnrolModal(true);
+        localStorage.setItem("modalCheck", true);
+      }, 4000);
+    }
+    console.log(userData)
+  }, []);
+
+  const handleEnrollModal = () => {
+    setEnrolModal(false);
+  };
 
   const handleFaq1 = () => {
     setFaq1(!faq1);
@@ -40,6 +59,9 @@ const Home = () => {
   };
   const handleFaq8 = () => {
     setFaq8(!faq8);
+  };
+  const handleFaq9 = () => {
+    setFaq9(!faq9);
   };
 
   // const onSubmit: SubmitHandler<Inputs> = (formData) => {
@@ -244,7 +266,7 @@ const Home = () => {
               </div>
               <div className="md:w-[50%] w-full  ">
                 <img
-                  src="/ESHIS.jpg"
+                  src="/oaImage31.jpg"
                   alt="ao-initiative members"
                   className="object-contain hidden md:block"
                 />
@@ -258,10 +280,13 @@ const Home = () => {
           Frequently Asked Questions
         </h2>
         <div className="py-7 border-t border-b ">
-          <div className="flex justify-between items-center mb-2">
+          <div
+            className="flex justify-between items-center mb-2 cursor-pointer"
+            onClick={handleFaq1}
+          >
             <p className="text-gray-500 font-bold text-lg">How do i enroll?</p>{" "}
             {faq1 ? (
-              <button onClick={handleFaq1}>
+              <button>
                 <IoIosArrowUp />{" "}
               </button>
             ) : (
@@ -281,13 +306,16 @@ const Home = () => {
           )}
         </div>
         <div className="py-7  border-b ">
-          <div className="flex justify-between items-center mb-2">
+          <div
+            className="flex justify-between items-center cursor-pointer mb-2"
+            onClick={handleFaq2}
+          >
             <p className="text-gray-500 font-bold text-lg">
               Will I need to pay for enrollment at the approved Primary Health
               Care Facility?
             </p>{" "}
             {faq2 ? (
-              <button onClick={handleFaq2}>
+              <button>
                 <IoIosArrowUp />{" "}
               </button>
             ) : (
@@ -306,12 +334,15 @@ const Home = () => {
           )}
         </div>
         <div className="py-7  border-b ">
-          <div className="flex justify-between items-center mb-2">
+          <div
+            className="flex justify-between items-center cursor-pointer mb-2"
+            onClick={handleFaq3}
+          >
             <p className="text-gray-500 font-bold text-lg">
               Will i need to submit any document before enrolment?
             </p>{" "}
             {faq3 ? (
-              <button onClick={handleFaq3}>
+              <button>
                 <IoIosArrowUp />{" "}
               </button>
             ) : (
@@ -329,13 +360,16 @@ const Home = () => {
           )}
         </div>
         <div className="py-7  border-b ">
-          <div className="flex justify-between items-center mb-2">
+          <div
+            className="flex justify-between items-center mb-2 cursor-pointer"
+            onClick={handleFaq4}
+          >
             <p className="text-gray-500 font-bold text-lg">
               What if the Primary Health Care Faclity cannot take care of me,
               What do i do?
             </p>{" "}
             {faq4 ? (
-              <button onClick={handleFaq4}>
+              <button>
                 <IoIosArrowUp />{" "}
               </button>
             ) : (
@@ -355,12 +389,15 @@ const Home = () => {
         </div>
 
         <div className="py-7  border-b ">
-          <div className="flex justify-between items-center mb-2">
+          <div
+            className="flex justify-between items-center mb-2 cursor-pointer"
+            onClick={handleFaq5}
+          >
             <p className="text-gray-500 font-bold text-lg">
               After my enrollment, when will have access to medical care?
             </p>{" "}
             {faq5 ? (
-              <button onClick={handleFaq5}>
+              <button>
                 <IoIosArrowUp />{" "}
               </button>
             ) : (
@@ -380,12 +417,15 @@ const Home = () => {
         </div>
 
         <div className="py-7  border-b ">
-          <div className="flex justify-between items-center mb-2">
+          <div
+            className="flex justify-between items-center  cursor-pointer mb-2"
+            onClick={handleFaq6}
+          >
             <p className="text-gray-500 font-bold text-lg">
               Can i enroll on behalf of someone?
             </p>{" "}
             {faq6 ? (
-              <button onClick={handleFaq6}>
+              <button>
                 <IoIosArrowUp />{" "}
               </button>
             ) : (
@@ -404,12 +444,15 @@ const Home = () => {
         </div>
 
         <div className="py-7  border-b ">
-          <div className="flex justify-between items-center mb-2">
+          <div
+            className="flex justify-between items-center mb-2 cursor-pointer"
+            onClick={handleFaq7}
+          >
             <p className="text-gray-500 font-bold text-lg">
               Can i enrol someone outside Ekiti State?
             </p>{" "}
             {faq7 ? (
-              <button onClick={handleFaq7}>
+              <button>
                 <IoIosArrowUp />{" "}
               </button>
             ) : (
@@ -429,12 +472,15 @@ const Home = () => {
         </div>
 
         <div className="py-7  border-b ">
-          <div className="flex justify-between items-center mb-2">
+          <div
+            className="flex justify-between items-center mb-2  cursor-pointer"
+            onClick={handleFaq8}
+          >
             <p className="text-gray-500 font-bold text-lg">
               Will i pay for drugs? Either monthly/weekly/yearly?
             </p>{" "}
             {faq8 ? (
-              <button onClick={handleFaq8}>
+              <button>
                 <IoIosArrowUp />{" "}
               </button>
             ) : (
@@ -451,22 +497,25 @@ const Home = () => {
         </div>
 
         <div className="py-7  border-b ">
-          <div className="flex justify-between items-center mb-2">
+          <div
+            className="flex justify-between items-center mb-2  cursor-pointer"
+            onClick={handleFaq9}
+          >
             <p className="text-gray-500 font-bold text-lg">
               In case of Emergency/Routine Checkup, do i need to pay for Card
               Registration/for Consultation?
             </p>{" "}
-            {faq8 ? (
-              <button onClick={handleFaq8}>
+            {faq9 ? (
+              <button>
                 <IoIosArrowUp />{" "}
               </button>
             ) : (
-              <button onClick={handleFaq8}>
+              <button onClick={handleFaq9}>
                 <IoIosArrowDown />
               </button>
             )}
           </div>
-          {faq8 ? (
+          {faq9 ? (
             <p className="py-4 px-5 bg-slate-100">
               From point of Entry to Lab test to Drugs, everything is FREE.
             </p>
@@ -525,6 +574,80 @@ const Home = () => {
         </div>
       </section>
       <Footer />
+      <Modal isOpen={enrolModal} onClose={handleEnrollModal}>
+        <div className="inline-block overflow-hidden text-left relative align-bottom transition-all transform bg-[white] rounded-2xl shadow-xl sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
+          <div className="mt-4 flex justify-between mx-5 border-b border-b-[#fceb07]">
+            <div className="flex items-center gap-3">
+              <svg
+                onClick={handleEnrollModal}
+                className="cursor-pointer"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.9497 7.05032L7.05021 16.9498"
+                  stroke="#171717"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M7.05029 7.05032L16.9498 16.9498"
+                  stroke="#171717"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <h3 className="md:text-[24px] text-[18px] leading-[31px]  text-[#990019] font-bold">
+                Are You A Sickle Cell Warrior?
+              </h3>
+            </div>
+          </div>
+
+          <div className="grid grid-col gap-3 pt-4 mx-5 mb-4">
+            <h2 className="md:text-[24px] text-[18px] text-center leading-[31px]  text-[#990019] font-extrabold">
+              Have you enrolled into the Ekiti State Sickle Scheme
+            </h2>
+
+            <h2 className="text-[14px] md:text-[18px]  text-[#990019] font-bold">
+              Hurry Now, Enrollment Closes July 31st !!!
+            </h2>
+            <p className="text-gray-500 font-bold ">Benefits:</p>
+
+            <div className="flex justify-between gap-1">
+              <div>
+                <p className="text-black md:text-[16px] text-[12px] text-center">
+                  Access to{" "}
+                  <span className="text-[#990019] font-bold">FREE</span> medical
+                  care at Preimary Health Facility
+                </p>
+              </div>
+              <div>
+                <p className="text-black  md:text-[16px] text-[12px] text-center">
+                  Access to{" "}
+                  <span className="text-[#990019] font-bold">FREE</span>{" "}
+                  specialist care at Secondary Health Facility
+                </p>
+              </div>
+              <div>
+                <p className="text-black  md:text-[16px] text-[12px] text-center">
+                  <span className="text-[#990019] font-bold">
+                    REDUCE FINANCIAL BURDEN
+                  </span>{" "}
+                  on Sickle Cell Warriors/caregivers
+                </p>
+              </div>
+            </div>
+            <button className="border rounded-lg bg-[#990019] text-white">
+              Enroll
+            </button>
+          </div>
+        </div>
+      </Modal>
     </div>
   );
 };

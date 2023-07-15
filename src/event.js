@@ -74,7 +74,10 @@ const Event = () => {
               World Sickle Cell Day
             </h2>
             <h2 className="md:text-[22px] text-[18px] font-bold text-gray-600 mb-2">
-              Date: <span className="md:text-[18px] text-sm font-bold text-gray-600">June 19th (annually)</span>
+              Date:{" "}
+              <span className="md:text-[18px] text-sm font-bold text-gray-600">
+                June 19th (annually)
+              </span>
             </h2>
             <p className="text-justify tracking-wide text:sm md:text-xl text-gray-500">
               World Sickle Cell Awareness Day is observed annually on June 19,
@@ -100,19 +103,22 @@ const Event = () => {
               Sickle Cell Awearness Month
             </h2>
             <h2 className="md:text-[22px] text-[18px]  font-bold text-gray-600 mb-2">
-              Date: <span className="md:text-[18px] text-sm font-bold text-gray-600">September (annually)</span>
+              Date:{" "}
+              <span className="md:text-[18px] text-sm font-bold text-gray-600">
+                September (annually)
+              </span>
             </h2>
             <p className="text-justify tracking-wide text-gray-500 text:sm md:text-xl">
               September is National Sickle Cell Awareness Month, designated by
               Congress to help focus attention on the need for research and
-              treatment of sickle cell disease. We encourage everyone to be a part of this
-              annual effort to increase awareness about sickle cell disease and
-              sickle cell trait during the month of September. Individuals and
-              organizations can join our efforts to bring attention to sickle
-              cell disease by engaging elected officials for proclamations,
-              hosting awareness events, distributing educational information to
-              dispel the myths about sickle cell disease, and lighting public
-              spaces, buildings and landmarks red!
+              treatment of sickle cell disease. We encourage everyone to be a
+              part of this annual effort to increase awareness about sickle cell
+              disease and sickle cell trait during the month of September.
+              Individuals and organizations can join our efforts to bring
+              attention to sickle cell disease by engaging elected officials for
+              proclamations, hosting awareness events, distributing educational
+              information to dispel the myths about sickle cell disease, and
+              lighting public spaces, buildings and landmarks red!
             </p>
             {expand1 === true ? (
               <h2 className="text-justify tracking-wide text-gray-500 text-xl">
@@ -136,6 +142,43 @@ const Event = () => {
             >
               {expand1 === false ? "expand" : "collapse"}
             </button>
+          </div>
+        </div>
+        <div className="flex flex-col items-center md:flex-row gap-6  mt-[60px]">
+          <div className="md:w-[50%] w-full  ">
+            {" "}
+            <img
+              src="/SCDwalk.jpg"
+              loading="lazy"
+              alt="gallery"
+              className="object-contain h-[280px] md:h-[500px] md:w-full "
+            />
+          </div>
+          <div className="md:w-[50%] w-full  ">
+            <h2 className="text-[28px] font-bold text-gray-600 mb-2">
+              Sickle Cell Day Walk in Ekiti
+            </h2>
+            <h2 className="md:text-[22px] text-[18px] font-bold text-gray-600 mb-2">
+              Date:{" "}
+              <span className="md:text-[18px] text-sm font-bold text-gray-600">
+                June 16th 2023
+              </span>
+            </h2>
+            <h2 className="md:text-[22px] text-[18px] font-bold text-gray-600 mb-2">
+              Theme:{" "}
+              <span className="md:text-[18px] text-sm font-bold text-gray-600">
+                Building and Strengthening sickle Cell Communities in Ekiti
+                State
+              </span>
+            </h2>
+            <p className="text-justify tracking-wide text:sm md:text-xl text-gray-500">
+              The theme for this year's Sickle Cell Day Walk event : "Building
+              and Strengthening Sickle Cell Communities in Ekiti State." which
+              took place on the 16th of June 2023 was With a focus on raising
+              awareness and promoting support for individuals living with sickle
+              cell disease, this theme reflects our commitment to fostering
+              unity and creating a more inclusive and compassionate society.
+            </p>
           </div>
         </div>
       </div>
