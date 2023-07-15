@@ -1,21 +1,33 @@
-import React, { useState } from "react";
-// import CountdownTimer from "./component/CountdownTimer";
-
+import React, { useEffect, useState } from "react";
+// import CountdownTimer from "./component/CountdownTimer"
 import "./App.css";
+import { useNavigate } from "react-router-dom";
 
 const Countdown = () => {
+  const navigate = useNavigate();
   const [days, setDays] = useState("");
   const [hours, setHours] = useState("");
   const [minutes, setMinutes] = useState("");
   const [seconds, setSeconds] = useState("");
 
-//   const THREE_DAYS_IN_MS = 17 * 24 * 60 * 60 * 1000;
-//   const NOW_IN_MS = new Date().getTime();
+  useEffect(() => {
+    if (
+      days === 0 &&
+      hours === 0 &&
+      minutes === 0 &&
+      seconds === 0
+    ) {
+      navigate("/countdown");
+    }// eslint-disable-next-line
+  },[days,hours,minutes,seconds]);
 
-//   const dateTimeAfterThreeDays = NOW_IN_MS + THREE_DAYS_IN_MS;
+  //   const THREE_DAYS_IN_MS = 17 * 24 * 60 * 60 * 1000;
+  //   const NOW_IN_MS = new Date().getTime();
 
-  // Set the date we're counting down to
-  var countDownDate = new Date("Jul 17, 2023 15:37:25").getTime();
+  //   const dateTimeAfterThreeDays = NOW_IN_MS + THREE_DAYS_IN_MS;
+
+  // Set the date we're counting down to "Jul 17, 2023 15:37:25"
+  var countDownDate = new Date("Jul 14, 2023 9:58:25").getTime();
 
   // Update the count down every 1 second
   var x = setInterval(function () {
@@ -42,24 +54,23 @@ const Countdown = () => {
     // If the count down is over, write some text
     if (distance < 0) {
       clearInterval(x);
-      document.getElementById("demo").innerHTML = "EXPIRED";
+      navigate("/countdown");
     }
   }, 1000);
 
   return (
     <div className="bg-[#990019] h-screen flex flex-col justify-center items-center">
-         <img
-          src="/celebrate.png"
-          alt="celebrate"
-          className="lg:h-[180px] h-[80px]"
-        />
+      <img
+        src="/celebrate.png"
+        alt="celebrate"
+        className="lg:h-[180px] h-[80px]"
+      />
       <h1 className="md:text-xl text-center text-lg font-extrabold text-white mb-4">
         OA Initiative Website Will Be Launched In
       </h1>
       {/* <CountdownTimer targetDate={dateTimeAfterThreeDays} /> */}
 
       <div className="show-counter flex text-[18px] md:text-[28px] font-extrabold text-white">
-       
         <div className="flex flex-col gap-3 countdown ">
           <h2> {days}</h2> <p>Days</p>
         </div>
@@ -70,7 +81,8 @@ const Countdown = () => {
         <p className="text-white">:</p>
         <div className="flex flex-col countdown gap-3 ">
           <h2> {minutes}</h2> <p>Minutes</p>
-        </div>   <p className="text-white">:</p>
+        </div>{" "}
+        <p className="text-white">:</p>
         <div className="flex flex-col countdown gap-3 ">
           <h2> {seconds}</h2> <p>Seconds</p>
         </div>
