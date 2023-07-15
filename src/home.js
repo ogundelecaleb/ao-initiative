@@ -643,7 +643,7 @@ const Home = () => {
               </div>
             </div>
             <button className="border rounded-lg bg-[#990019] text-white">
-              Enroll
+            <Link to="/signUp"> Enroll</Link>
             </button>
           </div>
         </div>
