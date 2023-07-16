@@ -27,7 +27,7 @@ const Countdown = () => {
   //   const dateTimeAfterThreeDays = NOW_IN_MS + THREE_DAYS_IN_MS;
 
   // Set the date we're counting down to "Jul 17, 2023 15:37:25"
-  var countDownDate = new Date("Jul 16, 2023 11:05:00").getTime();
+  var countDownDate = new Date("Jul 16, 2023 11:10:00").getTime();
 
   // Update the count down every 1 second
   var x = setInterval(function () {
