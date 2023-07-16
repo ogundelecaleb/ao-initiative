@@ -10,7 +10,7 @@ const SignUp = () => {
   return (
     <>
       <Header />
-      <div className="px-[30px] md:px-[80px] lg:px-[130px] py-[75px] bg-[#990019] text-white  ">
+      <div className="px-[8px] md:px-[60px] lg:px-[110px] py-[45px] md:py-[75px] bg-[#990019] text-white  ">
         {/* <h3 className="mb-5 text-xl font-bold">
           {" "}
           Sign up to stay informed and connected through email with information
