@@ -21,12 +21,12 @@ const Home = () => {
   const [enrolModal, setEnrolModal] = useState(false);
 
   useEffect(() => {
-    let userData = localStorage.getItem("modalCheck");
+    let userData = localStorage.getItem("Check");
 
-    if (userData == null && userData.length < 0) {
+    if (userData == null ) {
       setTimeout(() => {
         setEnrolModal(true);
-        localStorage.setItem("modalCheck", true);
+        localStorage.setItem("Check", true);
       }, 4000);
     }
     console.log(userData)
