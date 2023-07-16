@@ -74,7 +74,7 @@ const Home = () => {
     <div>
       <Header />
 
-      <div className="px-[30px] md:px-[80px] lg:px-[130px] py-[75px] bg-[#990019]  ">
+      <div className="px-[16px] md:px-[60px] lg:px-[110px] py-[75px] bg-[#990019]  ">
         {/* Hero Section */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <m.div
@@ -166,7 +166,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="px-[30px] md:px-[80px] lg:px-[130px] pt-[170px] lg:pt-[60px] pb-[75px] bg-[#990019]  ">
+      <div className="px-[16px] md:px-[60px] lg:px-[110px] pt-[170px] lg:pt-[60px] pb-[75px] bg-[#990019]  ">
         <div className="mt-[260px] md:mt-[46px]">
           <div className="flex flex-col gap-[40px] md:flex-row md:gap-[80px]">
             <div className="md:w-[50%] w-full ">
@@ -216,7 +216,7 @@ const Home = () => {
         <div className="w-full absolute top-[10%] bg-black left-0 h-[400px] -skew-y-12 -z-20"></div>
       </div>
       {/* Service Section */}
-      <div className="px-[30px] md:px-[80px] lg:px-[130px] py-[75px] bg-white  ">
+      <div className="px-[16px] md:px-[60px] lg:px-[110px] py-[75px] bg-white  ">
         <div className="flex flex-row justify-between items-center gap-9 bg-white">
           <div>
             <div className="flex flex-col items-center gap-[40px] md:flex-row md:gap-[80px]">
@@ -275,7 +275,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <section className=" py-[48px] px-[30px]   relative md:px-[80px] lg:px-[130px]">
+      <section className=" py-[48px] px-[16px]   relative md:px-[60px] lg:px-[110px]">
         <h2 className="text-[1.7rem] lg:text-[2.5rem] font-extrabold text-center text-gray-600 tracking-wide mb-3">
           Frequently Asked Questions
         </h2>
@@ -528,7 +528,7 @@ const Home = () => {
       </section>
       <section
         id="contact"
-        className="bg-gray-200 py-[48px] px-[30px] md:px-[80px] lg:px-[130px] "
+        className="bg-gray-200 py-[48px] px-[16px] md:px-[60px] lg:px-[110px] "
       >
         <div>
           <h2 className="text-[28px] text-gray-600 font-bold mb-4 text-center">
