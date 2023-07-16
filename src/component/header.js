@@ -13,7 +13,7 @@ const Header = () => {
   return (
     <div className="sticky w-full bg-gray-100 z-1000 lg:relative ">
       <div className="flex flex-row items-center  justify-between relative px-[30px] md:px-[80px] lg:px-[130px] py-[12px]">
-       <Link to="/">
+       <Link to="/home">
           <img src="/oa-logo.png" alt="" className="lg:h-[45px] h-[38px]" /> 
        </Link>
     
@@ -21,7 +21,7 @@ const Header = () => {
         <nav className="hidden lg:inline-block">
           <ul className="flex flex-row items-center justify-between gap-[30px] ">
             <li className="cursor-pointer font-bold hover:text-[#990019] hover:border-b-[#990019]">
-              <Link to="/">Home</Link>{" "}
+              <Link to="/home">Home</Link>{" "}
             </li>
             <li className="cursor-pointer font-bold hover:text-[#990019] hover:border-b-[#990019]">
               <Link to="/aboutUs">About Us</Link>{" "}
@@ -44,7 +44,7 @@ const Header = () => {
         {showMenu && (
           <div className="bg-white absolute right-14 -bottom-[120%] lg:hidden w-[290px] py-5 px-3 z-99999999999999999">
             <ul className="flex  gap-[10px] mb-2 ">
-              <Link to="/">
+              <Link to="/home">
                 {" "}
                 <li className="cursor-pointer border-b  hover:text-[##990019] hover:border-b-[#990019]">
                   Home{" "}

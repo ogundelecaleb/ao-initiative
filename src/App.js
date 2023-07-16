@@ -19,7 +19,7 @@ function App() {
         <Route path="/aboutUs" element={<AboutUs />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/event" element={<Event />} />
-        <Route path="/countdown" element={<Home />} />
+        <Route path="/home" element={<Home />} />
       </Routes>
     </BrowserRouter>
   );
