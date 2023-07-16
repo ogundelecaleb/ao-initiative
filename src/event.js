@@ -121,8 +121,8 @@ const Event = () => {
               lighting public spaces, buildings and landmarks red!
             </p>
             {expand1 === true ? (
-              <h2 className="text-justify tracking-wide text-gray-500 text-xl">
-                Show Love, Give Blood for National Sickle Cell Awareness Month
+            <h2 className="text-justify tracking-wide text-gray-500 text:sm md:text-xl">
+            Show Love, Give Blood for National Sickle Cell Awareness Month
                 2023 Again this year, we invite you to join us for a virtual
                 blood drive to support sickle cell warriors. Did you know that
                 blood transfusions are one of the most critical treatments for

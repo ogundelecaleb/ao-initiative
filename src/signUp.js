@@ -162,135 +162,133 @@ const SignUp = () => {
             height="5919"
             frameborder="0"
             marginheight="0"
-            marginwidth="0"
+            marginHidth="0"
             className=" w-full "
           >
-         <svg
-                            className="ml-4 w-6 h-6 text-[white] animate-spin"
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                          >
-                            <circle
-                              className="opacity-25"
-                              cx="12"
-                              cy="12"
-                              r="10"
-                              stroke="currentColor"
-                              stroke-width="4"
-                            ></circle>
-                            <path
-                              className="opacity-75"
-                              fill="currentColor"
-                              d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
-                            ></path>
-                          </svg>
+            <svg
+              className="ml-4 w-6 h-6 text-[white] animate-spin"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <circle
+                className="opacity-25"
+                cx="12"
+                cy="12"
+                r="10"
+                stroke="currentColor"
+                stroke-width="4"
+              ></circle>
+              <path
+                className="opacity-75"
+                fill="currentColor"
+                d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+              ></path>
+            </svg>
           </iframe>
         </div>
       </div>
       <footer className="bg-gray-100  py-8 px-3 md:px-[80px] lg:px-[130px]">
-      <div className="wrapper reveal">
-        <div className="flex lg:flex-row flex-col w-full gap-3">
-          <div className="flex-2 text-white pr-4 md:w-[35%] lg:w-[40%]">
-            <img src="/oaLogo.png" alt="" />
-            <h4 className="text-[#990019] py-2 tracking-wider ">
-              Enriching lifes...
-            </h4>
-            <p className="text-[#990019] text-sm md:text-md ">
-              OA Initiative is a non-profit organization dedicated to improving
-              the lives of individuals and families affected by sickle cell
-              disease.
-            </p>
-          </div>
-          <div className="flex-grow flex lg:flex-row md:flex-row flex-col gap-4  justify-between text-white w-full">
-            <div class="box-item">
-              <h4 className="text-[#990019]  tracking-wider font-bold text-md">
-                Quick Link
+        <div className="wrapper reveal">
+          <div className="flex lg:flex-row flex-col w-full gap-3">
+            <div className="flex-2 text-white pr-4 md:w-[35%] lg:w-[40%]">
+              <img src="/oaLogo.png" alt="" />
+              <h4 className="text-[#990019] py-2 tracking-wider ">
+                Enriching lifes...
               </h4>
-              <ul className="text-sm md:text-md text-[#990019]">
-                <Link to="/">
-                  <li className="cursor-pointer">
-                    <p className=" py-2 tracking-wider">Home</p>
-                  </li>
-                </Link>
-                <Link to="/aboutUs">
-                  <li  className="cursor-pointer">
-                    <p className="py-2 tracking-wider">
-                      About Us
-                    </p>
-                  </li>
-                </Link>
-                <Link to="/gallery">
-                  <li  className="cursor-pointer">
-                    <p className=" py-2 tracking-wider">Gallery</p>
-                  </li>
-                </Link>
-                <Link to="/event">
-                  <li  className="cursor-pointer">
-                    <p className=" py-2 tracking-wider">Event</p>
-                  </li>
-                </Link>
+              <p className="text-[#990019] text-sm md:text-md ">
+                OA Initiative is a non-profit organization dedicated to
+                improving the lives of individuals and families affected by
+                sickle cell disease.
+              </p>
+            </div>
+            <div className="flex-grow flex lg:flex-row md:flex-row flex-col gap-4  justify-between text-white w-full">
+              <div class="box-item">
+                <h4 className="text-[#990019]  tracking-wider font-bold text-md">
+                  Quick Link
+                </h4>
+                <ul className="text-sm md:text-md text-[#990019]">
+                  <Link to="/">
+                    <li className="cursor-pointer">
+                      <p className=" py-2 tracking-wider">Home</p>
+                    </li>
+                  </Link>
+                  <Link to="/aboutUs">
+                    <li className="cursor-pointer">
+                      <p className="py-2 tracking-wider">About Us</p>
+                    </li>
+                  </Link>
+                  <Link to="/gallery">
+                    <li className="cursor-pointer">
+                      <p className=" py-2 tracking-wider">Gallery</p>
+                    </li>
+                  </Link>
+                  <Link to="/event">
+                    <li className="cursor-pointer">
+                      <p className=" py-2 tracking-wider">Event</p>
+                    </li>
+                  </Link>
 
-                <Link to="/signup">
-                  <li  className="cursor-pointer">
-                    <p className=" py-2 tracking-wider"> Enroll</p>
+                  <Link to="/signup">
+                    <li className="cursor-pointer">
+                      <p className=" py-2 tracking-wider"> Enroll</p>
+                    </li>
+                  </Link>
+                </ul>
+              </div>
+              <div className="box-item">
+                <h4 className="text-[#990019] text-md tracking-wider font-bold">
+                  Contact
+                </h4>
+                <ul className="contact text-[#990019] text-sm md:text-md">
+                  <li className="py-2 flex gap-1 items-center">
+                    <BsTelephone />
+                    <p>+234 8148942186</p>
                   </li>
-                </Link>
-              </ul>
-            </div>
-            <div className="box-item">
-              <h4 className="text-[#990019] text-md tracking-wider font-bold">
-                Contact
-              </h4>
-              <ul className="contact text-[#990019] text-sm md:text-md">
-                <li className="py-2 flex gap-1 items-center">
-                  <BsTelephone />
-                  <p>+234 8148942186</p>
-                </li>
-                <li className="py-2 flex gap-1 items-center">
-                  <GoLocation /> <p>20, Oore Ofe quarters, Ekiti State. </p>
-                </li>
-                <li className="py-2 flex gap-1 items-center">
-                  <GoMail />
-                  <p>olanipekunayomideinitiative@gmail.com</p>
-                </li>
-                <li>
-                  {" "}
-                  <SocialIcon
-                    url="https://twitter.com/OAinitiative_"
-                    fgColor="#990019"
-                    bgColor="transparent"
-                  />
-                  <SocialIcon
-                    url="https://www.linkedin.com/in/o-a-initiative-3bb616275"
-                    fgColor="#990019"
-                    bgColor="transparent"
-                  />
-                  <SocialIcon
-                    url="https://www.instagram.com/oa_initiative/"
-                    fgColor="#990019"
-                    bgColor="transparent"
-                  />
-                </li>
-              </ul>
-            </div>
-            <div className="box-item ">
-              <h4 className="text-md text-[#990019] font-bold">Legal</h4>
-              <ul className="text-[#990019] text-sm md:text-md">
-                <li>
-                  <p className="py-2">Terms of Use</p>
-                </li>
-                <li>
-                  <p className="py-2">Privacy Policy</p>
-                </li>
-              </ul>
+                  <li className="py-2 flex gap-1 items-center">
+                    <GoLocation /> <p>20, Oore Ofe quarters, Ekiti State. </p>
+                  </li>
+                  <li className="py-2 flex gap-1 items-center">
+                    <GoMail />
+                    <p>olanipekunayomideinitiative@gmail.com</p>
+                  </li>
+                  <li>
+                    {" "}
+                    <SocialIcon
+                      url="https://twitter.com/OAinitiative_"
+                      fgColor="#990019"
+                      bgColor="transparent"
+                    />
+                    <SocialIcon
+                      url="https://www.linkedin.com/in/o-a-initiative-3bb616275"
+                      fgColor="#990019"
+                      bgColor="transparent"
+                    />
+                    <SocialIcon
+                      url="https://www.instagram.com/oa_initiative/"
+                      fgColor="#990019"
+                      bgColor="transparent"
+                    />
+                  </li>
+                </ul>
+              </div>
+              <div className="box-item ">
+                <h4 className="text-md text-[#990019] font-bold">Legal</h4>
+                <ul className="text-[#990019] text-sm md:text-md">
+                  <li>
+                    <p className="py-2">Terms of Use</p>
+                  </li>
+                  <li>
+                    <p className="py-2">Privacy Policy</p>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
+          <p className="text-[#990019] mt-8 pb-4 text-center text-xs md:text-md ">
+            © OA.Initiative 2023. All rights reserved.
+          </p>
         </div>
-        <p className="text-[#990019] mt-8 pb-4 text-center text-xs md:text-md ">
-          © OA.Initiative 2023. All rights reserved.
-        </p>
-      </div>
       </footer>
     </>
   );
