@@ -23,7 +23,7 @@ const Home = () => {
   useEffect(() => {
     let userData = localStorage.getItem("modalCheck");
 
-    if (userData.length < 0) {
+    if (userData == null && userData.length < 0) {
       setTimeout(() => {
         setEnrolModal(true);
         localStorage.setItem("modalCheck", true);
