@@ -3,14 +3,16 @@ import { GoLocation, GoMail } from "react-icons/go";
 import { BsTelephone } from "react-icons/bs";
 import { SocialIcon } from "react-social-icons";
 import { Link } from "react-router-dom";
+import Mailchip from "./mailchip";
 
 const Footer = () => {
   return (
     <footer className="bg-[#990019] pt-[42px] px-3 md:px-[80px] lg:px-[130px]">
       <div className="wrapper reveal">
-        <div className="flex lg:flex-row flex-col w-full gap-3">
-          <div className="flex-2 text-white pr-4 md:w-[35%] lg:w-[40%]">
+        <div className="flex lg:flex-row flex-col w-full gap-7">
+          <div className="flex-2 text-white pr-4">
             <img src="/oaLogo.png" alt="" />
+            {/* <Mailchip /> */}
             <h4 className="text-gray-100 py-2 tracking-wider ">
               Enriching lifes...
             </h4>
@@ -32,25 +34,25 @@ const Footer = () => {
                   </li>
                 </Link>
                 <Link to="/aboutUs">
-                  <li  className="cursor-pointer">
+                  <li className="cursor-pointer">
                     <p className="text-gray-100 py-2 tracking-wider">
                       About Us
                     </p>
                   </li>
                 </Link>
                 <Link to="/gallery">
-                  <li  className="cursor-pointer">
+                  <li className="cursor-pointer">
                     <p className="text-gray-100 py-2 tracking-wider">Gallery</p>
                   </li>
                 </Link>
                 <Link to="/event">
-                  <li  className="cursor-pointer">
+                  <li className="cursor-pointer">
                     <p className="text-gray-100 py-2 tracking-wider">Event</p>
                   </li>
                 </Link>
 
                 <Link to="/signup">
-                  <li  className="cursor-pointer">
+                  <li className="cursor-pointer">
                     <p className="text-gray-100 py-2 tracking-wider"> Enroll</p>
                   </li>
                 </Link>
@@ -63,7 +65,7 @@ const Footer = () => {
               <ul className="contact text-gray-100 text-sm md:text-md">
                 <li className="py-2 flex gap-1 items-center">
                   <BsTelephone />
-                  <p>+234 9029051446</p>
+                  <a href="tel:+2349029051446">+2349029051446</a>
                 </li>
                 <li className="py-2 flex gap-1 items-center">
                   <GoLocation /> <p>Suite 2, No. 66, Bank Road, Ado Ekiti. </p>
@@ -92,7 +94,7 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div className="box-item ">
+            {/* <div className="box-item ">
               <h4 className="text-md text-gray-200 font-bold">Legal</h4>
               <ul className="text-gray-100 text-sm md:text-md">
                 <li>
@@ -102,7 +104,7 @@ const Footer = () => {
                   <p className="py-2">Privacy Policy</p>
                 </li>
               </ul>
-            </div>
+            </div> */}
           </div>
         </div>
         <p className="text-gray-100  mt-8 pb-4 text-center text-xs md:text-md ">

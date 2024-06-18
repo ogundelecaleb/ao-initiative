@@ -2,10 +2,12 @@ import React, { useEffect, useState } from "react";
 import Header from "./component/header";
 import { Link } from "react-router-dom";
 import Footer from "./component/footer";
+import Blog from "./component/blogs";
 import { motion as m } from "framer-motion";
 import { useForm } from "react-hook-form";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import Modal from "./component/Modal";
+import Mailchip from "./component/mailchip";
 
 const Home = () => {
   const { register, handleSubmit } = useForm();
@@ -21,15 +23,15 @@ const Home = () => {
   const [enrolModal, setEnrolModal] = useState(false);
 
   useEffect(() => {
-    let userData = localStorage.getItem("Check");
+    let userData = localStorage.getItem("awareness");
 
-    if (userData == null ) {
+    if (userData == null) {
       setTimeout(() => {
         setEnrolModal(true);
-        localStorage.setItem("Check", true);
+        localStorage.setItem("awareness", true);
       }, 4000);
     }
-    console.log(userData)
+    console.log(userData);
   }, []);
 
   const handleEnrollModal = () => {
@@ -87,9 +89,9 @@ const Home = () => {
             transition={{
               duration: 1.5,
             }}
-            className="md:max-w-[45%] md:w-[45%] w-full"
+            className="md:max-w-[50%] md:w-[50%] w-full"
           >
-            <h2 className="text-white font-bold mb-5 text-[34px] md:text-[42px]">
+            <h2 className="text-white font-bold mb-5 text-[28px] md:text-[42px]">
               As a Sickle Cell Warrior, you can be whatever and whomever you
               want to be. <span className="bg-yellow-400 px-2">Don't</span>{" "}
               limit yourself!
@@ -106,23 +108,25 @@ const Home = () => {
             </button>
           </m.div>
 
-          <div className="relative object-cover md:max-w-[42%] md:w-[42%] w-full">
-            <span className="h-full w-full absolute bg-[#771023] top-0 left-4 rounded-bl-[80px] object-contain"></span>
-            <div className=" ">
-              <img
-                src="/heroImage.png"
-                alt=""
-                className="h-full  relative object-contain "
-              />
+          <div className="h-full md:max-w-[42%] md:w-[42%] w-full flex justify-center">
+            <div className="relative object-cover ">
+              <span className="h-[300px] md:h-[400px] w-[300px] md:w-full absolute bg-[#771023] top-0 left-4 rounded-bl-[80px] object-contain"></span>
+              <div className=" ">
+                <img
+              src="/oaImage32.jpg"
+              alt=""
+                  className="h-[300px] md:h-[400px] w-[300px] md:w-full  relative object-contain rounded-bl-[80px] "
+                />
+              </div>
             </div>
           </div>
         </div>
       </div>
       {/* ways to support */}
       <div className=" relative bg-white h-[120px] ">
-        <div className="mx-[10%]  rounded-tl-[40px]  rounded-br-[40px] absolute px-8 py-6 -top-[50%] bg-gray-200  w-[80%] left-0 right-0 item-center  ">
+        <div className="mx-[10%]  rounded-tl-[40px]  rounded-br-[40px] absolute px-8 py-2 md:py-6 -top-[50%] bg-gray-200  w-[80%] left-0 right-0 item-center  ">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-            <h3 className="text-gray-500 text-[26px]">
+            <h3 className="text-gray-500 text-[20px] md:text-[26px]">
               <span className=" text-[#990019] font-bold">
                 3 easy ways you can donate
               </span>{" "}
@@ -133,32 +137,35 @@ const Home = () => {
               <img
                 src="/cashinhand.png"
                 alt=""
-                className="md:h-[100px] lg:h-[120px] h-[55px] mb-2  md:mb-4"
+                className="md:h-[80px] lg:h-[100px] h-[40px] mb-2  md:mb-4"
               />
-              <h2 className="md:text-[24px] text-[18px] font-bold text-gray-700 ">
+              <h2 className="md:text-[20px] text-[18px] font-bold text-gray-700 ">
                 Donate Cash
               </h2>
             </div>
+            <Link to="/donate">
+
             <div className="flex flex-col  rounded-lg items-center bg-gray-100 text-center border shadow p-2 md:p-5">
               {" "}
               <img
                 src="/bloodbag.png"
                 alt=""
-                className="md:h-[100px] lg:h-[120px] h-[55px] mb-2  md:mb-4"
+                className="md:h-[80px] lg:h-[100px] h-[40px] mb-2  md:mb-4"
               />
-              <h2 className="md:text-[24px] text-[18px] font-bold text-gray-700 ">
+              <h2 className="md:text-[20px] text-[18px] font-bold text-gray-700 ">
                 Donate Blood
               </h2>
             </div>
+            </Link>
             <Link to="https://docs.google.com/forms/d/e/1FAIpQLSf0Cp-gNc_hCrCULZS_Du9s59Zt9pH1c9XjDEfC8NAzmYQZrA/viewform">
               <div className="flex flex-col animate-bounce transform ease-in duration-50  hover:scale-125 cursor-pointer rounded-lg items-center text-center  bg-gray-100 border shadow p-2 md:p-5">
                 {" "}
                 <img
                   src="/support.png"
                   alt=""
-                  className="md:h-[100px] lg:h-[120px] h-[55px] mb-2  md:mb-4"
+                  className="md:h-[80px] lg:h-[100px] h-[40px] mb-2  md:mb-4"
                 />
-                <h2 className="md:text-[24px] text-[18px] font-bold text-gray-700 ">
+              <h2 className="md:text-[20px] text-[18px] font-bold text-gray-700 ">
                   Volunteer
                 </h2>
               </div>
@@ -166,7 +173,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="px-[16px] md:px-[60px] lg:px-[110px] pt-[170px] lg:pt-[60px] pb-[75px] bg-[#990019]  ">
+      <div className="px-[16px] md:px-[60px] lg:px-[110px] pt-[60px] md:pt-[100px] lg:pt-[60px] pb-[75px] bg-[#990019]  ">
         <div className="mt-[260px] md:mt-[46px]">
           <div className="flex flex-col gap-[40px] md:flex-row md:gap-[80px]">
             <div className="md:w-[50%] w-full ">
@@ -174,19 +181,20 @@ const Home = () => {
                 What Is Sickle Cell Disease (SCD)
               </h3>
 
-              <p className="text-gray-100 my-4 text-justify ">
+              <p className="text-gray-100 my-4  ">
                 Sickle cell disease (SCD) is the commonest inherited disorder of
                 hemoglobin in children resulting from the inheritance of
                 abnormal hemoglobin genes from both parents. It is estimated
                 that between 150,000 and 300,000 children are born every year
                 with the condition in Africa. Nigeria, by her sheer huge size,
                 is the country with the highest burden of the disease where ~2%
-                of all newborns are born with the disorder. The course of the
-                disease varies widely with some children exhibiting severe
-                manifestations requiring frequent hospital visits and
-                admissions. The condition poses enormous stress and financial
-                burden on the parents of children with the disease who are
-                usually the primary caregivers in most instances.
+                of all newborns are born with the disorder.
+                <br /> The course of the disease varies widely with some
+                children exhibiting severe manifestations requiring frequent
+                hospital visits and admissions. The condition poses enormous
+                stress and financial burden on the parents of children with the
+                disease who are usually the primary caregivers in most
+                instances.
               </p>
               <Link to="https://en.wikipedia.org/wiki/Sickle_cell_disease">
                 <button className="bg-yellow-400 px-2 py-2 rounded-lg text-[#990019]">
@@ -198,7 +206,7 @@ const Home = () => {
               <h2 className="text-[24px] text-gray-100 font-bold ">
                 How to stay healthy with SCD
               </h2>
-              <ul className="text-gray-100 my-4 text-justify list-disc ">
+              <ul className="text-gray-100 my-4 text-justify list-disc pl-4 ">
                 <li>Drink plenty of water.</li>
                 <li>Avoid drinking or smoking.</li>
                 <li> Get enough rest.</li>
@@ -220,7 +228,7 @@ const Home = () => {
         <div className="flex flex-row justify-between items-center gap-9 bg-white">
           <div>
             <div className="flex flex-col items-center gap-[40px] md:flex-row md:gap-[80px]">
-              <div className="md:w-[50%] w-full text-gray-500 text-[20px] text-justify ">
+              <div className="md:w-[50%] w-full text-gray-500 text-[18px]  ">
                 <h3 className="text-[24px] text-gray-600 font-bold mb-4 ">
                   About O.A INITIATIVE
                 </h3>
@@ -266,16 +274,51 @@ const Home = () => {
               </div>
               <div className="md:w-[50%] w-full  ">
                 <img
-                  src="/oaImage31.jpg"
+                  src="/oaImage20.jpg"
                   alt="ao-initiative members"
-                  className="object-contain hidden md:block"
+                  className="object-contain"
                 />
               </div>
             </div>
           </div>
         </div>
       </div>
-      <section className=" py-[48px] px-[16px]   relative md:px-[60px] lg:px-[110px]">
+      <section className="relative h-[50vh] ">
+        <img
+          src="https://oncomhfoundation.org/wp-content/uploads/2022/07/2A5FB06D-5BD6-4353-8A51-FE75014A23B9.png-1.jpg"
+          loading="lazy"
+          alt=""
+          className="absolute top-0 left-0 right-0 h-full w-full object-cover -z-10"
+        />
+
+        <div className="h-full w-full flex flex-col justify-center z-10 text-white py-[24px] bg-[#990019] opacity-90 px-4 md:px-[40px] lg:px-[80px]">
+          <h3 className=" text-[24px] text-center mb-5">
+            Discover Ekiti State Health Hub
+          </h3>
+          <p>
+            Get information of nearby medical centers, emergency services, and
+            specialized care providers. Your health matters, and having easy
+            access to this information can make a difference in critical
+            situations.
+            <br />
+            <br />
+            Stay prepared, stay informed – click the button and download Ekiti
+            state's public and private health center list now! 🌐💙
+          </p>
+
+          <a
+            href="/HealthCenterList.pdf"
+            download="HealthCenterList.pdf"
+            className="mx-auto mt-3"
+          >
+            <button className="text-white px-2 py-2 rounded-md border">
+              Downlaod
+            </button>
+          </a>
+        </div>
+      </section>
+      <Blog />
+      {/* <section className=" py-[48px] px-[16px]   relative md:px-[60px] lg:px-[110px]">
         <h2 className="text-[1.7rem] lg:text-[2.5rem] font-extrabold text-center text-gray-600 tracking-wide mb-3">
           Frequently Asked Questions
         </h2>
@@ -525,8 +568,36 @@ const Home = () => {
         </div>
 
         <div></div>
+      </section> */}
+      <section class="bg-white dark:bg-gray-900">
+        <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+          <div class="mx-auto max-w-screen-md sm:text-center">
+            <h2 class="mb-4 text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl dark:text-white">
+              Sign up for our newsletter
+            </h2>
+            <p class="mx-auto mb-8 max-w-2xl font-light text-gray-500 md:mb-12 sm:text-xl dark:text-gray-400">
+              Stay up to date with the roadmap progress, announcements and
+              exclusive monthly newsletters, feel free to sign up with your email.
+            </p>
+            <form action="#">
+           
+                  <Mailchip />{" "}
+              
+              {/* <div class="mx-auto max-w-screen-sm text-sm text-left text-gray-500 newsletter-form-footer dark:text-gray-300">
+                We care about the protection of your data.{" "}
+                <a
+                  href="#"
+                  class="font-medium text-primary-600 dark:text-primary-500 hover:underline"
+                >
+                  Read our Privacy Policy
+                </a>
+                .
+              </div> */}
+            </form>
+          </div>
+        </div>
       </section>
-      <section
+      {/* <section
         id="contact"
         className="bg-gray-200 py-[48px] px-[16px] md:px-[60px] lg:px-[110px] "
       >
@@ -572,9 +643,9 @@ const Home = () => {
             </button>
           </form>
         </div>
-      </section>
+      </section> */}
       <Footer />
-      <Modal isOpen={enrolModal} onClose={handleEnrollModal}>
+      <Modal isOpen={false} onClose={handleEnrollModal}>
         <div className="inline-block overflow-hidden text-left relative align-bottom transition-all transform bg-[white] rounded-2xl shadow-xl sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
           <div className="mt-4 flex justify-between mx-5 border-b border-b-[#fceb07]">
             <div className="flex items-center gap-3">
@@ -603,49 +674,11 @@ const Home = () => {
                 />
               </svg>
               <h3 className="md:text-[24px] text-[18px] leading-[31px]  text-[#990019] font-bold">
-                Are You A Sickle Cell Warrior?
+                SCD Awareness Month is Here !!
               </h3>
             </div>
           </div>
-
-          <div className="grid grid-col gap-3 pt-4 mx-5 mb-4">
-            <h2 className="md:text-[24px] text-[18px] text-center leading-[31px]  text-[#990019] font-extrabold">
-              Have you enrolled into the Ekiti State Sickle Scheme
-            </h2>
-
-            <h2 className="text-[14px] md:text-[18px]  text-[#990019] font-bold">
-              Hurry Now, Enrollment Closes July 31st !!!
-            </h2>
-            <p className="text-gray-500 font-bold ">Benefits:</p>
-
-            <div className="flex justify-between gap-1">
-              <div>
-                <p className="text-black md:text-[16px] text-[12px] text-center">
-                  Access to{" "}
-                  <span className="text-[#990019] font-bold">FREE</span> medical
-                  care at Preimary Health Facility
-                </p>
-              </div>
-              <div>
-                <p className="text-black  md:text-[16px] text-[12px] text-center">
-                  Access to{" "}
-                  <span className="text-[#990019] font-bold">FREE</span>{" "}
-                  specialist care at Secondary Health Facility
-                </p>
-              </div>
-              <div>
-                <p className="text-black  md:text-[16px] text-[12px] text-center">
-                  <span className="text-[#990019] font-bold">
-                    REDUCE FINANCIAL BURDEN
-                  </span>{" "}
-                  on Sickle Cell Warriors/caregivers
-                </p>
-              </div>
-            </div>
-            <button className="border rounded-lg bg-[#990019] text-white">
-            <Link to="/signUp"> Enroll</Link>
-            </button>
-          </div>
+          <img src="/awearness.jpg" alt="" />
         </div>
       </Modal>
     </div>
