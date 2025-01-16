@@ -15,6 +15,7 @@ import AllBlogs from "./allBlogs";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import YearCalendar from "./calender";
 import Donate from "./donate";
+import DonateCash from "./donateCash";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
         <Route path="/donate" element={<Donate />} />
         <Route path="/allblog" element={<AllBlogs />} />
         <Route path="/calendar" element={<YearCalendar />} />
+        <Route path="/donatecash" element={<DonateCash />} />
       </Routes>
     </BrowserRouter>
   );

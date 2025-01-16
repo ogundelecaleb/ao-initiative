@@ -132,6 +132,7 @@ const Home = () => {
               </span>{" "}
               to support a worthy cause
             </h3>
+            <Link to="/donatecash">
             <div className="flex flex-col rounded-lg items-center text-center bg-gray-100 border shadow  p-2 md:p-5">
               {" "}
               <img
@@ -143,6 +144,7 @@ const Home = () => {
                 Donate Cash
               </h2>
             </div>
+            </Link>
             <Link to="/donate">
 
             <div className="flex flex-col  rounded-lg items-center bg-gray-100 text-center border shadow p-2 md:p-5">

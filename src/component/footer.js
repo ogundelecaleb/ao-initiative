@@ -65,7 +65,7 @@ const Footer = () => {
               <ul className="contact text-gray-100 text-sm md:text-md">
                 <li className="py-2 flex gap-1 items-center">
                   <BsTelephone />
-                  <a href="tel:+2349029051446">+2349029051446</a>
+                  <a href="tel:+2348169909895">+2348169909895</a>
                 </li>
                 <li className="py-2 flex gap-1 items-center">
                   <GoLocation /> <p>Suite 2, No. 66, Bank Road, Ado Ekiti. </p>

@@ -39,6 +39,9 @@ const Header = () => {
             <li className={`cursor-pointer font-bold ${location.pathname === "/event"? "text-[#990019]" : ""} hover:text-[#990019] hover:border-b-[#990019]`}>
               <Link to="/event">Event</Link>{" "}
             </li>
+            <li className={`cursor-pointer font-bold ${location.pathname === "/donatecash"? "text-[#990019]" : ""} hover:text-[#990019] hover:border-b-[#990019]`}>
+              <Link to="/donatecash">Donate</Link>{" "}
+            </li>
           </ul>
         </nav>
         <button className="animate-pulse py-[14px] px-[40px] bg-[#990019] text-white font-bold rounded-md hidden lg:inline-block">
@@ -88,6 +91,12 @@ const Header = () => {
                 {" "}
                 <li className={`cursor-pointer border-b   ${location.pathname === "/event"? "text-[#990019]" : ""} hover:text-[#990019] hover:border-b-[#990019]`}>
                   Event{" "}
+                </li>
+              </Link>
+              <Link to="/donatecash">
+                {" "}
+                <li className={`cursor-pointer border-b   ${location.pathname === "/donatecash"? "text-[#990019]" : ""} hover:text-[#990019] hover:border-b-[#990019]`}>
+                  Donate Cash{" "}
                 </li>
               </Link>
             </ul>

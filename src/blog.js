@@ -5,6 +5,7 @@ import "react-multi-carousel/lib/styles.css";
 import { useParams } from "react-router-dom";
 import Header from "./component/header";
 import Footer from "./component/footer";
+import { PortableText } from "@portabletext/react";
 
 const Blog = () => {
   const BlockContent = require('@sanity/block-content-to-react')
@@ -54,7 +55,11 @@ const Blog = () => {
                 className="h-[200px] md:h-[350px] mb-[24px] md:mb-[48px]  "
               />
               <div className = "prose text-gray-600 mb-[24px] md:mb-[48px]  ">
-                        <BlockContent blocks = {blog.body} projectId = "pzl9rov9" dataset = "production" />
+                        {/* <BlockContent blocks = {blog.body} projectId = "pzl9rov9" dataset = "production" /> */}
+                        <PortableText
+                    value={blog.body}
+                    //components={myPortableTextComponents}
+                  />
                     </div> <h3 className="text-gray-600">Published: {blog.publishedAt}</h3>
             </div>
           ))}
