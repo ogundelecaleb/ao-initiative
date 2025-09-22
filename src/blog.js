@@ -38,7 +38,7 @@ const Blog = () => {
       .catch(console.error);
 
       console.log(blogs)
-  },);
+  },[]);
 
   return (
     <div>
@@ -48,19 +48,18 @@ const Blog = () => {
         {blogs &&
           blogs.map((blog, index) => (
             <div key={index} className=" p-3 flex justify-center flex-col items-center">
-              <h2 className="text-lg md:text-xl lg:text-2xl font-semibold mb-4 md:mb-6 title mt-5 text-left">{blog.title}</h2>
+              <h2 className="text-lg md:text-xl lg:text-2xl font-semibold mb-4 md:mb-6 title mt-5 text-center">{blog.title}</h2>
               <img
                 src={imageUrlFor(blog.mainImage.asset._ref).url()}
                 alt=""
                 className="h-[200px] md:h-[350px] mb-[24px] md:mb-[48px]  "
               />
-              <div className = "prose text-gray-600 mb-[24px] md:mb-[48px]  ">
-                        {/* <BlockContent blocks = {blog.body} projectId = "pzl9rov9" dataset = "production" /> */}
+              <div className = "prose text-gray-800 text-justify font-light  mb-[24px] md:mb-[48px]  ">
                         <PortableText
                     value={blog.body}
-                    //components={myPortableTextComponents}
                   />
-                    </div> <h3 className="text-gray-600">Published: {blog.publishedAt}</h3>
+                    </div> <h3 className="text-gray-600">Published: {new Date(blog.publishedAt).toLocaleString()}
+                    </h3>
             </div>
           ))}
       </div>

@@ -91,7 +91,7 @@ const Home = () => {
             }}
             className="md:max-w-[50%] md:w-[50%] w-full"
           >
-            <h2 className="text-white font-bold mb-5 text-[28px] md:text-[42px]">
+            <h2 className="text-white font-bold mb-5 text-[28px] md:text-[38px]">
               As a Sickle Cell Warrior, you can be whatever and whomever you
               want to be. <span className="bg-yellow-400 px-2">Don't</span>{" "}
               limit yourself!
@@ -319,6 +319,66 @@ const Home = () => {
           </a>
         </div>
       </section>
+      {/* Fellowship Section */}
+      <div id="#fellowship" className="px-[16px] md:px-[60px] lg:px-[110px] py-[40px] md:py-[75px] bg-gray-50">
+        <div className="flex flex-col lg:flex-row items-center gap-[30px] md:gap-[40px] lg:gap-[80px]">
+          <div className="lg:w-[50%] w-full">
+            <h3 className="text-[20px] md:text-[24px] lg:text-[32px] text-[#990019] font-bold mb-4 text-center lg:text-left">
+              Sickle Cell Action Community Health Fellowship
+            </h3>
+            <p className="text-gray-600 mb-6 leading-relaxed text-sm md:text-base text-center lg:text-left">
+              Join the next generation of leaders advancing sickle cell awareness, 
+              advocacy & community health. Together let's fight sickle cell, empower 
+              communities and save lives.
+            </p>
+            <div className="bg-white p-4 md:p-6 rounded-lg shadow-md mb-4 md:mb-6">
+              <h4 className="text-[#990019] font-bold text-base md:text-lg mb-3">Program Benefits:</h4>
+              <ul className="text-gray-600 space-y-1 md:space-y-2 text-sm md:text-base">
+                <li>• Training & Certification</li>
+                <li>• Mentorship & Networking</li>
+                <li>• Recognition as a Community Health Fellow</li>
+              </ul>
+            </div>
+            <div className="bg-white p-4 md:p-6 rounded-lg shadow-md mb-4 md:mb-6">
+              <h4 className="text-[#990019] font-bold text-base md:text-lg mb-3">Who Can Apply:</h4>
+              <ul className="text-gray-600 space-y-1 md:space-y-2 text-sm md:text-base">
+                <li>• Ages 18-25</li>
+                <li>• Students | Young Professionals | Community Advocates</li>
+                <li>• Passionate about health, leadership & social impact</li>
+              </ul>
+            </div>
+            <div className="flex flex-col sm:flex-row gap-3 md:gap-4 items-center">
+              <button className="bg-[#990019] text-white px-4 md:px-6 py-2 md:py-3 rounded-lg font-semibold hover:bg-[#771023] transition-colors w-full sm:w-auto text-sm md:text-base">
+                <Link to="https://docs.google.com/forms/u/0/d/1iMVZ_rI4nYt_y6GBvL01dIbt83VWENX5Yn8qLukDtww/viewform?pli=1&pli=1&pli=1&edit_requested=true
+SICKLE CELL ACTION COMMUNITY HEALTH FELLOWSHIP" target="_blank" rel="noopener noreferrer">
+                  Apply Now
+                </Link>
+              </button>
+              <div className="text-xs md:text-sm text-gray-500 text-center sm:text-left">
+                Deadline: September 30th, 2025
+              </div>
+            </div>
+          </div>
+          <div className="lg:w-[50%] w-full mt-6 lg:mt-0">
+            <div className="relative">
+              <div className="bg-[#990019] rounded-lg p-3 md:p-4 text-center mb-4 md:mb-6">
+                <div className="bg-white rounded-lg p-4 md:p-6">
+                  <h4 className="text-[#990019] font-bold text-lg md:text-xl mb-2">3 MONTHS</h4>
+                  <p className="text-gray-600 text-xs md:text-sm">HYBRID</p>
+                  <p className="text-gray-600 text-xs md:text-sm">(ONLINE + COMMUNITY ACTION)</p>
+                </div>
+              </div>
+              <div className="text-center">
+                <img 
+                  src="/oaImage1.webp" 
+                  alt="Fellowship participants" 
+                  className="w-full rounded-lg shadow-lg max-w-[400px] mx-auto"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <Blog />
       {/* <section className=" py-[48px] px-[16px]   relative md:px-[60px] lg:px-[110px]">
         <h2 className="text-[1.7rem] lg:text-[2.5rem] font-extrabold text-center text-gray-600 tracking-wide mb-3">

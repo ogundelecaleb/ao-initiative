@@ -150,6 +150,8 @@ const Event = () => {
         </div>
       </div>
       <Footer />
+
+     
     </div>
   );
 };

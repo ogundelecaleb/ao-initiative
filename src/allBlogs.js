@@ -38,7 +38,7 @@ const AllBlogs = () => {
     // Simulate a 5-second delay
     const loadingTimeout = setTimeout(() => {
       setIsLoading(false);
-    }, 6000);
+    }, 2000);
 
     return () => {
       clearTimeout(loadingTimeout);
@@ -77,9 +77,9 @@ const AllBlogs = () => {
                     <img
                       src={imageUrlFor(blog.mainImage.asset._ref).url()}
                       alt=""
-                      className="rounded-lg mb-[24px] md:mb-[38px] h-[128px] md:h-[160px] w-full object-cover "
+                      className="rounded-lg mb-[18px] h-[128px] md:h-[140px] w-full object-cover "
                     />
-                    <h2 className="text-[18px] md:text-[20px] line-clamp-2 lg:text-[24px] mb-2 font-semibold">
+                    <h2 className="text-[14px] md:text-[16px] line-clamp-2  mb-2 font-medium">
                       {blog.title}
                     </h2>
                     <div className = "prose line-clamp-2">
@@ -88,7 +88,7 @@ const AllBlogs = () => {
                   
                   </div>
                   <Link to={"/blog/" + blog.slug.current}>
-                    <button className="border border-[#B9B9B9]   rounded-lg px-3 py-2 mt-[26px] md:mt-[32px]">
+                    <button className="border border-[#B9B9B9] font-normal text-xs hover:bg-gray-50   rounded-lg px-2 py-1 shadow mt-[18px] ">
                       read more
                     </button>
                   </Link>
