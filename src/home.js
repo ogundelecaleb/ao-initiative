@@ -320,7 +320,7 @@ const Home = () => {
         </div>
       </section>
       {/* Fellowship Section */}
-      <div id="#fellowship" className="px-[16px] md:px-[60px] lg:px-[110px] py-[40px] md:py-[75px] bg-gray-50">
+      <div id="fellowship" className="px-[16px] md:px-[60px] lg:px-[110px] py-[40px] md:py-[75px] bg-gray-50">
         <div className="flex flex-col lg:flex-row items-center gap-[30px] md:gap-[40px] lg:gap-[80px]">
           <div className="lg:w-[50%] w-full">
             <h3 className="text-[20px] md:text-[24px] lg:text-[32px] text-[#990019] font-bold mb-4 text-center lg:text-left">
@@ -370,7 +370,7 @@ SICKLE CELL ACTION COMMUNITY HEALTH FELLOWSHIP" target="_blank" rel="noopener no
               </div>
               <div className="text-center">
                 <img 
-                  src="/oaImage1.webp" 
+                  src="/fellowship.jpg" 
                   alt="Fellowship participants" 
                   className="w-full rounded-lg shadow-lg max-w-[400px] mx-auto"
                 />
@@ -631,13 +631,13 @@ SICKLE CELL ACTION COMMUNITY HEALTH FELLOWSHIP" target="_blank" rel="noopener no
 
         <div></div>
       </section> */}
-      <section class="bg-white dark:bg-gray-900">
+      <section class="bg-[#fafafa] ">
         <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
           <div class="mx-auto max-w-screen-md sm:text-center">
-            <h2 class="mb-4 text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl dark:text-white">
+            <h2 class="mb-4 text-[22px] md:text-[28px] font-bold tracking-tight  text-gray-800 sm:text-4xl">
               Sign up for our newsletter
             </h2>
-            <p class="mx-auto mb-8 max-w-2xl font-light text-gray-500 md:mb-12 sm:text-xl dark:text-gray-400">
+            <p class="mx-auto mb-8 max-w-2xl font-light text-gray-500 md:mb-12 text-sm sm:text-lg ">
               Stay up to date with the roadmap progress, announcements and
               exclusive monthly newsletters, feel free to sign up with your email.
             </p>
