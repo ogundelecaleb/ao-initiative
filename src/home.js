@@ -38,33 +38,33 @@ const Home = () => {
     setEnrolModal(false);
   };
 
-  const handleFaq1 = () => {
-    setFaq1(!faq1);
-  };
-  const handleFaq2 = () => {
-    setFaq2(!faq2);
-  };
-  const handleFaq3 = () => {
-    setFaq3(!faq3);
-  };
-  const handleFaq4 = () => {
-    setFaq4(!faq4);
-  };
-  const handleFaq5 = () => {
-    setFaq5(!faq5);
-  };
-  const handleFaq6 = () => {
-    setFaq6(!faq6);
-  };
-  const handleFaq7 = () => {
-    setFaq7(!faq7);
-  };
-  const handleFaq8 = () => {
-    setFaq8(!faq8);
-  };
-  const handleFaq9 = () => {
-    setFaq9(!faq9);
-  };
+  // const handleFaq1 = () => {
+  //   setFaq1(!faq1);
+  // };
+  // const handleFaq2 = () => {
+  //   setFaq2(!faq2);
+  // };
+  // const handleFaq3 = () => {
+  //   setFaq3(!faq3);
+  // };
+  // const handleFaq4 = () => {
+  //   setFaq4(!faq4);
+  // };
+  // const handleFaq5 = () => {
+  //   setFaq5(!faq5);
+  // };
+  // const handleFaq6 = () => {
+  //   setFaq6(!faq6);
+  // };
+  // const handleFaq7 = () => {
+  //   setFaq7(!faq7);
+  // };
+  // const handleFaq8 = () => {
+  //   setFaq8(!faq8);
+  // };
+  // const handleFaq9 = () => {
+  //   setFaq9(!faq9);
+  // };
 
   // const onSubmit: SubmitHandler<Inputs> = (formData) => {
   //   window.location.href = `mailto:ogundelecaleb14@gmail?subject=${formData.subject}&body=Hi, My Name is ${formData.name}. ${formData.message} (${formData.email})`}
@@ -285,41 +285,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <section className="relative h-[50vh] ">
-        <img
-          src="https://oncomhfoundation.org/wp-content/uploads/2022/07/2A5FB06D-5BD6-4353-8A51-FE75014A23B9.png-1.jpg"
-          loading="lazy"
-          alt=""
-          className="absolute top-0 left-0 right-0 h-full w-full object-cover -z-10"
-        />
-
-        <div className="h-full w-full flex flex-col justify-center z-10 text-white py-[24px] bg-[#990019] opacity-90 px-4 md:px-[40px] lg:px-[80px]">
-          <h3 className=" text-[24px] text-center mb-5">
-            Discover Ekiti State Health Hub
-          </h3>
-          <p>
-            Get information of nearby medical centers, emergency services, and
-            specialized care providers. Your health matters, and having easy
-            access to this information can make a difference in critical
-            situations.
-            <br />
-            <br />
-            Stay prepared, stay informed – click the button and download Ekiti
-            state's public and private health center list now! 🌐💙
-          </p>
-
-          <a
-            href="/HealthCenterList.pdf"
-            download="HealthCenterList.pdf"
-            className="mx-auto mt-3"
-          >
-            <button className="text-white px-2 py-2 rounded-md border">
-              Downlaod
-            </button>
-          </a>
-        </div>
-      </section>
-      {/* Fellowship Section */}
+        {/* Fellowship Section */}
       <div id="fellowship" className="px-[16px] md:px-[60px] lg:px-[110px] py-[40px] md:py-[75px] bg-gray-50">
         <div className="flex flex-col lg:flex-row items-center gap-[30px] md:gap-[40px] lg:gap-[80px]">
           <div className="lg:w-[50%] w-full">
@@ -379,6 +345,41 @@ SICKLE CELL ACTION COMMUNITY HEALTH FELLOWSHIP" target="_blank" rel="noopener no
           </div>
         </div>
       </div>
+      <section className="relative h-[50vh] ">
+        <img
+          src="https://oncomhfoundation.org/wp-content/uploads/2022/07/2A5FB06D-5BD6-4353-8A51-FE75014A23B9.png-1.jpg"
+          loading="lazy"
+          alt=""
+          className="absolute top-0 left-0 right-0 h-full w-full object-cover -z-10"
+        />
+
+        <div className="h-full w-full flex flex-col justify-center z-10 text-white py-[24px] bg-[#990019] opacity-90 px-4 md:px-[40px] lg:px-[80px]">
+          <h3 className=" text-[24px] text-center mb-5">
+            Discover Ekiti State Health Hub
+          </h3>
+          <p>
+            Get information of nearby medical centers, emergency services, and
+            specialized care providers. Your health matters, and having easy
+            access to this information can make a difference in critical
+            situations.
+            <br />
+            <br />
+            Stay prepared, stay informed – click the button and download Ekiti
+            state's public and private health center list now! 🌐💙
+          </p>
+
+          <a
+            href="/HealthCenterList.pdf"
+            download="HealthCenterList.pdf"
+            className="mx-auto mt-3"
+          >
+            <button className="text-white px-2 py-2 rounded-md border">
+              Downlaod
+            </button>
+          </a>
+        </div>
+      </section>
+    
       <Blog />
       {/* <section className=" py-[48px] px-[16px]   relative md:px-[60px] lg:px-[110px]">
         <h2 className="text-[1.7rem] lg:text-[2.5rem] font-extrabold text-center text-gray-600 tracking-wide mb-3">
